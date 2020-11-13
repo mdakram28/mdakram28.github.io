@@ -19,20 +19,31 @@ export class AppComponent implements AfterViewInit {
   };
 
   startWebsite() {
-    if(this.startWebsiteTimeout) {
+    if (this.startWebsiteTimeout) {
       clearTimeout(this.startWebsiteTimeout);
       this.startWebsiteTimeout = null;
     }
     $("body").addClass("slide-in-bottom");
-    // $(".console").hide();
+    $(".console").hide();
     setTimeout(() => {
       $("body").removeClass("slide-in-bottom");
       $("body").removeClass("hidden");
     }, 500);
   }
 
+  shouldShowTerminal(): boolean {
+    try {
+      const v = localStorage.getItem("firstVisited");
+      if (!v) return true;
+      const timeDiff = new Date().getTime() - new Date(v).getTime();
+      if (timeDiff > 60 * 60 * 1000) return true;
+    } catch (err) {}
+
+    return false;
+  }
+
   ngAfterViewInit(): void {
-    if (!localStorage.getItem("_firstVisited")) {
+    if (this.shouldShowTerminal()) {
       setTimeout(() => {
         this.startConsole(() => {
           localStorage.setItem("firstVisited", new Date().toString());
@@ -42,7 +53,10 @@ export class AppComponent implements AfterViewInit {
             this.startWebsite.bind(this),
             true
           );
-          this.startWebsiteTimeout = setTimeout(this.startWebsite.bind(this), 10000);
+          this.startWebsiteTimeout = setTimeout(
+            this.startWebsite.bind(this),
+            10000
+          );
         });
       }, 1000);
     } else {

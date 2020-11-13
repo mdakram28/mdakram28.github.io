@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod && npm run scully && cpy src/assets/CNAME docs && git add . && git commit -m 'deploy' && git push",
+    "deploy": "ng build --prod && npm run scully && cpy src/assets/CNAME docs && git add . && git commit -m 'deploy' && git push -f",
     "scully": "scully",
     "scully:serve": "scully serve"
   },
@@ -26,6 +26,7 @@
     "@scullyio/init": "^1.0.1",
     "@scullyio/ng-lib": "^1.0.0",
     "@scullyio/scully": "^1.0.0",
+    "cpy-cli": "^3.1.1",
     "ng-gallery": "^5.0.0",
     "ngx-bootstrap": "^6.2.0",
     "ngx-markdown": "^10.1.1",
