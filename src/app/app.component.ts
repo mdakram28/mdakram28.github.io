@@ -10,6 +10,7 @@ declare const $;
 export class AppComponent implements AfterViewInit {
   title = "portfolio";
   lines = "";
+  startWebsiteTimeout = null;
 
   counts = {
     awards: 12,
@@ -18,6 +19,10 @@ export class AppComponent implements AfterViewInit {
   };
 
   startWebsite() {
+    if(this.startWebsiteTimeout) {
+      clearTimeout(this.startWebsiteTimeout);
+      this.startWebsiteTimeout = null;
+    }
     $("body").addClass("slide-in-bottom");
     $(".console").hide();
     setTimeout(() => {
@@ -37,7 +42,7 @@ export class AppComponent implements AfterViewInit {
             this.startWebsite.bind(this),
             true
           );
-          setTimeout(this.startWebsite.bind(this), 10000);
+          this.startWebsiteTimeout = setTimeout(this.startWebsite.bind(this), 10000);
         });
       }, 1000);
     } else {
@@ -70,7 +75,7 @@ export class AppComponent implements AfterViewInit {
     ------------
     Full Stack Developer | Blockchain Developer
 
-    ^w1000Have a project or idea you'de like to discuss?^w1000
+    ^w1000Have a project or idea you'd like to discuss?^w1000
     Let's chat mdakram28@gmail.com.^w1000
 
     24 Hackathons
