@@ -37,7 +37,7 @@ export class AppComponent implements AfterViewInit {
 
   shouldShowTerminal(): boolean {
     try {
-      const v = localStorage.getItem("_firstVisited");
+      const v = localStorage.getItem("firstVisited");
       if (!v) return true;
       const timeDiff = new Date().getTime() - new Date(v).getTime();
       if (timeDiff > 60 * 60 * 1000) return true;
