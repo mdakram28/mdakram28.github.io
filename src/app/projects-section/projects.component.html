@@ -1,0 +1,88 @@
+<section class="resume-section" id="projects">
+  <div class="resume-section-content">
+    <h2 class="mb-5">Projects</h2>
+
+    <div
+      class="project d-flex flex-column flex-md-row mb-5"
+      *ngFor="let proj of projects"
+    >
+      <div
+        class="flex-shrink-0"
+        [style.backgroundColor]="proj.thumbnail_bg || ''"
+      >
+        <div
+          [style.backgroundImage]="'url(\'' + proj.thumbnail + '\')'"
+          [style.backgroundSize]="proj.thumbnail_size || 'cover'"
+          class="thumbnail contain"
+          (click)="openProjectModal(proj)"
+        ></div>
+      </div>
+      <div class="flex-grow-1 description">
+        <h3 class="heading mb-0" (click)="openProjectModal(proj)">
+          {{ proj.title }}
+        </h3>
+
+        <div class="subheading">
+          {{ proj.subtitle }}
+        </div>
+
+        <div class="tags">
+          <span class="tag" *ngFor="let tag of proj.tags">
+            <span class="badge badge-primary">{{ tag }}</span>
+          </span>
+        </div>
+
+        <p>{{ proj.description }}</p>
+
+        <span class="button" (click)="openProjectModal(proj)">Gallery · More</span>
+
+        <div class="social-links" style="float: right">
+          <a
+            class="button"
+            [href]="link.url"
+            target="blank"
+            *ngFor="let link of proj.links"
+          >
+            <i *ngIf="link.type == 'github'" class="fab fa-github"></i>
+            <span *ngIf="link.type == 'github'">&nbsp;CODE</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="m-0" />
+
+<ng-template #modelTemplate *ngIf="project">
+  <div class="modal-body" id="project-modal-body">
+    <span style="float: right">
+      <button
+        type="button"
+        class="close"
+        aria-label="Close"
+        (click)="modalRef.hide()"
+      >
+        <span aria-hidden="true" style="font-size: 50px">&times;</span>
+      </button>
+    </span>
+    <h2 class="heading mb-0">
+      {{ project.title }}
+    </h2>
+    <h3 class="heading mb-0">
+      {{ project.subtitle }}
+    </h3>
+
+    <div class="tags">
+      <span class="tag" *ngFor="let tag of project.tags">
+        <span class="badge badge-primary">{{ tag }}</span
+        >&nbsp;
+      </span>
+    </div>
+
+    <p>{{ project.description }}</p>
+
+    <gallery thumbPosition="left" [items]="images"></gallery>
+
+    <markdown [src]="project.readmeSrc" class="markdown"></markdown>
+  </div>
+</ng-template>

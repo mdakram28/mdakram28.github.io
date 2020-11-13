@@ -1,0 +1,103 @@
+:host {
+  background-color: #f4f4f4;
+}
+
+.metrics {
+  font-size: 20px;
+  vertical-align: middle;
+  // tr > td:first-child {
+  //     width: 50px;
+  // }
+  tr > td:first-child {
+    // width: 150px;
+    font-weight: bold;
+    font-size: 40px;
+    width: 60px;
+    color: #bd5d38;
+    cursor: pointer;
+  }
+  tr > td:last-child {
+    // text-align: right;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+#about .resume-section-content {
+  position: relative;
+  .scroll-icon {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 40px;
+    color: #6c757d4d;
+    &:hover {
+      color: #6c757d9c;
+    }
+  }
+}
+
+.console {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #191f27;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .shell {
+    background-color: #292e39;
+    margin: 50px;
+    max-width: 1000px;
+    height: 600px;
+    flex: 1;
+    border-radius: 5px;
+    padding: 15px 20px;
+
+    .toolbar {
+      font-size: 20px;
+    }
+    .commands {
+      font-size: 20px;
+      font-family: "Lucida Console", Monaco, monospace;
+      padding: 20px 10px;
+      white-space: pre;
+
+      #cursor {
+        display: inline-block;
+        width: 12px;
+        height: 20px;
+        margin-bottom: -2px;
+        background-color: rgba(255, 255, 255, 0.774);
+      }
+    }
+  }
+}
+
+::ng-deep body.hidden {
+  overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  .shell {
+    margin: 20px !important;
+
+    .toolbar {
+      font-size: 15px !important;
+    }
+    .commands {
+      font-size: 15px !important;
+      #cursor {
+        width: 9px !important;
+        height: 15px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,265 @@
+<div class="console">
+  <div class="shell">
+    <div class="toolbar">
+      <i class="fa fa-circle" style="color: #db5863" aria-hidden="true"></i
+      >&nbsp;
+      <i class="fa fa-circle" style="color: #f1c62a" aria-hidden="true"></i
+      >&nbsp;
+      <i class="fa fa-circle" style="color: #48cd38" aria-hidden="true"></i>
+    </div>
+
+    <div class="commands">
+      <span style="opacity: 0.8">$</span>&nbsp;
+      <span>{{ lines }}</span>
+      <span id="cursor" class="blink"></span>
+    </div>
+  </div>
+</div>
+
+<app-nav></app-nav>
+<!-- Page Content-->
+<div class="container-fluid p-0">
+  <!-- About-->
+  <section class="resume-section" id="about">
+    <div class="resume-section-content">
+      <h1 class="mb-0 text-focus-in">
+        Akram
+        <span class="text-primary">Ansari</span>
+      </h1>
+      <div class="subheading mb-5">
+        Full Stack Developer · Blockchain Developer
+      </div>
+      <p class="lead mb-5">
+        Have a project or idea you'de like to discuss? <br />
+        Let's chat <a href="mailto:mdakram28@gmail.com">mdakram28@gmail.com</a>.
+      </p>
+      <table class="metrics">
+        <tr (click)="goto('hacks')">
+          <!-- <td><i class="fas fa-mug-hot"></i></td> -->
+          <td>
+            <span>{{ counts.hacks.toString().padStart(2, "0") }}</span>
+          </td>
+          <td>Hackathons</td>
+        </tr>
+        <tr (click)="goto('projects')">
+          <!-- <td><i class="fas fa-project-diagram"></i></td> -->
+          <td>
+            <span>{{ counts.projects.toString().padStart(2, "0") }}</span>
+          </td>
+          <td>Projects</td>
+        </tr>
+        <tr (click)="goto('awards')">
+          <!-- <td><i class="fas fa-trophy"></i></td> -->
+          <td>
+            <span>{{ counts.awards.toString().padStart(2, "0") }}</span>
+          </td>
+          <td>Awards</td>
+        </tr>
+      </table>
+      <br />
+      <div class="social-icons">
+        <a class="social-icon" href="https://www.linkedin.com/in/mdakram28/"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a class="social-icon" href="https://github.com/mdakram28/"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a class="social-icon" href="https://github.com/mdakram28/"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+      </div>
+
+      <a class="scroll-icon" href="#projects"
+        ><i class="fas fa-chevron-down"></i
+      ></a>
+    </div>
+  </section>
+  <hr class="m-0" />
+  <app-projects-section></app-projects-section>
+  <app-hacks-section></app-hacks-section>
+  <!-- Experience-->
+  <section class="resume-section" id="experience">
+    <div class="resume-section-content">
+      <h2 class="mb-5">Experience</h2>
+      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="flex-grow-1">
+          <h3 class="mb-0">Software Engineer</h3>
+          <div class="subheading mb-3">Schlumberger (Pune Tech Center)</div>
+          <ul>
+            <li>
+              Formalized the role of team Software Reliability Engineer by
+              taking the responsibility to monitor and debug the cloud service
+              in production environment.
+            </li>
+            <li>
+              Developed Data Processing applications in Microservice
+              architecture for oil and gas industry in a team of 11 people.
+            </li>
+            <li>
+              Single-Handedly developed tool to assist debugging in a complex
+              cloud environment.
+            </li>
+          </ul>
+        </div>
+        <div class="flex-shrink-0">
+          <span class="text-primary">June 2019 - Present</span>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="flex-grow-1">
+          <h3 class="mb-0">Software Development Intern</h3>
+          <div class="subheading mb-3">Schlumberger (Pune Tech Center)</div>
+          <p>
+            Developed scalable microservice based cloud solution for former
+            standalone monolithic application.
+          </p>
+        </div>
+        <div class="flex-shrink-0">
+          <span class="text-primary">Januray 2019 - April 2019</span>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="flex-grow-1">
+          <h3 class="mb-0">Software Lead</h3>
+          <div class="subheading mb-3">RoverX VIT, Vellore, Tamil Nadu</div>
+          <p>
+            Lead the software team and Developed the software for the rover,
+            Enigma 1.0, for competing in European Rover Challenge (2017) and
+            University Rover Challenge (2018)
+          </p>
+        </div>
+        <div class="flex-shrink-0">
+          <span class="text-primary">March 2016 - March 2018</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="m-0" />
+  <!-- Education-->
+  <section class="resume-section" id="education">
+    <div class="resume-section-content">
+      <h2 class="mb-5">Education</h2>
+      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="flex-grow-1">
+          <h3 class="mb-0">Vellore Institute of Technology</h3>
+          <div class="subheading mb-3">Bachelor of Technology (B.Tech.)</div>
+          <div>Information Technology</div>
+          <p>CGPA: 9.07/10</p>
+        </div>
+        <div class="flex-shrink-0">
+          <span class="text-primary">May 2015 - May 2019</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="m-0" />
+  <!-- Skills-->
+  <section class="resume-section" id="skills">
+    <div class="resume-section-content">
+      <h2 class="mb-5">Skills</h2>
+      <div class="subheading mb-3">Programming Languages & Tools</div>
+      <ul class="list-inline dev-icons">
+        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
+        <li class="list-inline-item"><i class="fab fa-react"></i></li>
+        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
+        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
+        <li class="list-inline-item"><i class="fab fa-less"></i></li>
+        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
+        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
+        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
+        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
+      </ul>
+      <div class="subheading mb-3">Workflow</div>
+      <ul class="fa-ul mb-0">
+        <li>
+          <span class="fa-li"><i class="fas fa-check"></i></span>
+          Problem Solving
+        </li>
+        <li>
+          <span class="fa-li"><i class="fas fa-check"></i></span>
+          Research and Analysis
+        </li>
+        <li>
+          <span class="fa-li"><i class="fas fa-check"></i></span>
+          Event Coordination
+        </li>
+        <li>
+          <span class="fa-li"><i class="fas fa-check"></i></span>
+          Agile Practitioner
+        </li>
+      </ul>
+    </div>
+  </section>
+  <hr class="m-0" />
+  <!-- Interests-->
+  <section class="resume-section" id="interests">
+    <div class="resume-section-content">
+      <h2 class="mb-5">Interests</h2>
+      <ul>
+        <li>Distributed Computing</li>
+        <li>Blockchain</li>
+        <li>Robotics</li>
+        <li>Guitar and Singing</li>
+      </ul>
+    </div>
+  </section>
+  <hr class="m-0" />
+  <!-- Awards-->
+  <section class="resume-section" id="awards">
+    <div class="resume-section-content">
+      <h2 class="mb-5">Awards & Certifications</h2>
+      <ul class="fa-ul mb-0">
+        <li class="mb-3">
+          <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+          <h5 class="mb-0">VITAA Best project award (2018)</h5>
+          Blockchain project for a transparent farmers market
+        </li>
+
+        <li class="mb-3">
+          <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+          <h5 class="mb-0">Hack Harvard</h5>
+          Developed an android app to match pets up for adoption to their
+          potential owners (PetFinder).
+        </li>
+        <li class="mb-3">
+          <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+          <h5 class="mb-0"></h5>
+        </li>
+        <li class="mb-3">
+          <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+          <h5 class="mb-0">Special Achiever Award (2017)</h5>
+          For representing my university in various national and international
+          hackathons.
+        </li>
+        <li class="mb-3">
+          <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+          <h5 class="mb-0">Special Achiever Award (2018)</h5>
+          For representing my university in European Rover Challenge and
+          University Rover Challenge and meritorious academic performance.
+        </li>
+        <li class="mb-3">
+          <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+          <h5 class="mb-0">European Rover Challenge (ERC 2017)</h5>
+          Achieved 1st in Asia, 6th global rank. Worked in a team of 9 people.
+          Supervised the software department.
+        </li>
+        <li class="mb-3">
+          <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+          <h5 class="mb-0">1st Prize - Honeywell WeHack (2018)</h5>
+          Developed a remote monitoring and debugging tool for software running
+          in inaccessible locations.
+        </li>
+        <li class="mb-3">
+          <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+          <h5 class="mb-0">
+            2nd Prize - Google Developer Group Devfest (2017)
+          </h5>
+          Blockchain media sharing platform.
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
