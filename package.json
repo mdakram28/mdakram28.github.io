@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod && npm run scully && git add . && git commit -m 'deploy' && git push",
+    "deploy": "ng build --prod && npm run scully && cpy src/assets/CNAME docs && git add . && git commit -m 'deploy' && git push",
     "scully": "scully",
     "scully:serve": "scully serve"
   },
