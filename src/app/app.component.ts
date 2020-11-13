@@ -26,20 +26,18 @@ export class AppComponent implements AfterViewInit {
     clearTimeout(this.startWebsiteTimeout);
     $(document).off('click', this.startWebsite);
     $(document).off('keypress', this.startWebsite);
-    // document.body.removeAllListeners();
-    console.log("Detached");
 
-    $("body").addClass("slide-in-bottom");
-    $(".console").hide();
+    // $("body").addClass("slide-in-bottom");
+    $(".console").fadeOut();
     setTimeout(() => {
-      $("body").removeClass("slide-in-bottom");
       $("body").removeClass("hidden");
+      // $("body").removeClass("slide-in-bottom");
     }, 500);
   }
 
   shouldShowTerminal(): boolean {
     try {
-      const v = localStorage.getItem("firstVisited");
+      const v = localStorage.getItem("_firstVisited");
       if (!v) return true;
       const timeDiff = new Date().getTime() - new Date(v).getTime();
       if (timeDiff > 60 * 60 * 1000) return true;
