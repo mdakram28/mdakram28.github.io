@@ -24,8 +24,8 @@ export class AppComponent implements AfterViewInit {
 
   startWebsite() {
     clearTimeout(this.startWebsiteTimeout);
-    $(document).off('click', this.startWebsite);
-    $(document).off('keypress', this.startWebsite);
+    $(document).off("click", this.startWebsite);
+    $(document).off("keypress", this.startWebsite);
 
     // $("body").addClass("slide-in-bottom");
     $(".console").fadeOut();
@@ -62,6 +62,12 @@ export class AppComponent implements AfterViewInit {
       $(".console").hide();
       $("body").toggleClass("hidden");
     }
+
+    setInterval(() => {
+      document
+        .getElementById("scroll-icon")
+        .classList.toggle("animate__fadeInDown");
+    }, 5000);
 
     // const i1 = setInterval(() => {
     //   this.counts.awards += 1;

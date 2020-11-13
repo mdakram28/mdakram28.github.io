@@ -1,6 +1,6 @@
 <app-nav></app-nav>
 <!-- Page Content-->
-<div class="container-fluid p-0" style="position: relative;">
+<div class="container-fluid p-0" style="position: relative">
   <div class="console">
     <div class="shell">
       <div class="toolbar">
@@ -35,21 +35,33 @@
         Let's chat <a href="mailto:mdakram28@gmail.com">mdakram28@gmail.com</a>.
       </p>
       <table class="metrics">
-        <tr (click)="goto('hacks')">
+        <tr
+          (click)="goto('hacks')"
+          class="animate__animated animate__fadeInLeft"
+          style="animation-delay: 1s"
+        >
           <!-- <td><i class="fas fa-mug-hot"></i></td> -->
           <td>
             <span>{{ counts.hacks.toString().padStart(2, "0") }}</span>
           </td>
           <td>Hackathons</td>
         </tr>
-        <tr (click)="goto('projects')">
+        <tr
+          (click)="goto('projects')"
+          class="animate__animated animate__fadeInLeft"
+          style="animation-delay: 1.2s"
+        >
           <!-- <td><i class="fas fa-project-diagram"></i></td> -->
           <td>
             <span>{{ counts.projects.toString().padStart(2, "0") }}</span>
           </td>
           <td>Projects</td>
         </tr>
-        <tr (click)="goto('awards')">
+        <tr
+          (click)="goto('awards')"
+          class="animate__animated animate__fadeInLeft"
+          style="animation-delay: 1.4s"
+        >
           <!-- <td><i class="fas fa-trophy"></i></td> -->
           <td>
             <span>{{ counts.awards.toString().padStart(2, "0") }}</span>
@@ -59,18 +71,27 @@
       </table>
       <br />
       <div class="social-icons">
-        <a class="social-icon" href="https://www.linkedin.com/in/mdakram28/"
+        <a
+          class="social-icon animate__animated animate__bounceIn"
+          style="animation-delay: 2.1s"
+          href="https://www.linkedin.com/in/mdakram28/"
           ><i class="fab fa-linkedin-in"></i
         ></a>
-        <a class="social-icon" href="https://github.com/mdakram28/"
+        <a
+          class="social-icon animate__animated animate__bounceIn"
+          style="animation-delay: 2.2s"
+          href="https://github.com/mdakram28/"
           ><i class="fab fa-github"></i
         ></a>
-        <a class="social-icon" href="https://github.com/mdakram28/"
+        <a
+          class="social-icon animate__animated animate__bounceIn"
+          style="animation-delay: 2.3s"
+          href="https://github.com/mdakram28/"
           ><i class="fab fa-facebook-f"></i
         ></a>
       </div>
 
-      <a class="scroll-icon" href="#projects"
+      <a id="scroll-icon" class="scroll-icon animate__animated" href="#projects"
         ><i class="fas fa-chevron-down"></i
       ></a>
     </div>
