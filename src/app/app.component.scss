@@ -28,6 +28,16 @@
   // tr > td:first-child {
   //     width: 50px;
   // }
+
+  tr {
+    transition: 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, transparent 50%, #33333373 50%);
+    background-position: 0% 0%;
+    &:hover {
+      background-position: -100% 0%;
+    }
+  }
   tr > td:first-child {
     // width: 150px;
     font-weight: bold;
@@ -42,6 +52,16 @@
     font-weight: 500;
     font-size: 1.5rem;
     cursor: pointer;
+
+    svg {
+      transition: 1s ease-out;
+    }
+    &:hover {
+      color: white;
+      svg {
+        margin-left: 10px;
+      }
+    }
   }
 }
 
@@ -107,7 +127,7 @@
 }
 
 ::ng-deep body.hidden {
-//   overflow: hidden;
+  //   overflow: hidden;
 }
 
 @media (max-width: 1000px) {
