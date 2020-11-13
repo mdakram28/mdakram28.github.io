@@ -4,7 +4,7 @@
 
 #about {
   max-width: none;
-  background-color: #000;
+  background: radial-gradient(ellipse at left top, #192633 0%, #000000 50%);
   color: #ffffffc2;
   h1 {
     color: #fff;
@@ -110,14 +110,17 @@
   overflow: hidden;
 }
 
+@media (max-width: 1000px) {
+  #about-bg {
+    display: none;
+  }
+}
+
 @media (max-width: 576px) {
   .scroll-icon {
     position: static !important;
     // left: unset;
     float: right !important;
-  }
-  #about-bg {
-    display: none;
   }
   .shell {
     margin: 20px !important;

@@ -18,11 +18,17 @@ export class AppComponent implements AfterViewInit {
     projects: 42,
   };
 
+  constructor() {
+    this.startWebsite = this.startWebsite.bind(this);
+  }
+
   startWebsite() {
-    if (this.startWebsiteTimeout) {
-      clearTimeout(this.startWebsiteTimeout);
-      this.startWebsiteTimeout = null;
-    }
+    clearTimeout(this.startWebsiteTimeout);
+    $(document).off('click', this.startWebsite);
+    $(document).off('keypress', this.startWebsite);
+    // document.body.removeAllListeners();
+    console.log("Detached");
+
     $("body").addClass("slide-in-bottom");
     $(".console").hide();
     setTimeout(() => {
@@ -47,16 +53,10 @@ export class AppComponent implements AfterViewInit {
       setTimeout(() => {
         this.startConsole(() => {
           localStorage.setItem("firstVisited", new Date().toString());
-          $(document).on("keypress", this.startWebsite.bind(this));
-          document.body.addEventListener(
-            "click",
-            this.startWebsite.bind(this),
-            true
-          );
-          this.startWebsiteTimeout = setTimeout(
-            this.startWebsite.bind(this),
-            10000
-          );
+          $(document).on("keypress", this.startWebsite);
+          $(document).on("click", this.startWebsite);
+          this.startWebsiteTimeout = setTimeout(this.startWebsite, 10000);
+          console.log("Attached");
         });
       }, 1000);
     } else {
