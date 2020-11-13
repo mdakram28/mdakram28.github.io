@@ -12,7 +12,7 @@ export const ProjectAgroshare: Project = {
     "Keep the cash flow in Indian Agriculture so that the farmers can earn " +
     "money in a hassle-free manner without load from the bank and allow " +
     "every individual to contribute in the farming community using " +
-    "blockchain which guarantees transparency,security and openess.",
+    "blockchain which guarantees transparency,security and openness.",
 
   gallery: [
     "/assets/projects/agroshare/image12.png",
