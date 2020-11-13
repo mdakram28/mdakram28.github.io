@@ -36,6 +36,7 @@ export class AppComponent implements AfterViewInit {
   }
 
   shouldShowTerminal(): boolean {
+    return false;
     try {
       const v = localStorage.getItem("firstVisited");
       if (!v) return true;

@@ -64,6 +64,7 @@
 }
 
 .console {
+  display: none;
   backdrop-filter: blur(10px);
   color: white;
   z-index: 2000;
@@ -106,7 +107,7 @@
 }
 
 ::ng-deep body.hidden {
-  overflow: hidden;
+//   overflow: hidden;
 }
 
 @media (max-width: 1000px) {
