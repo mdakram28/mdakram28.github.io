@@ -81,7 +81,7 @@
 
     <p>{{ project.description }}</p>
 
-    <gallery thumbPosition="left" [items]="images"></gallery>
+    <gallery thumbPosition="left" [items]="images" [thumb]="false" [dots]="true" [counter]="false"></gallery>
 
     <markdown [src]="project.readmeSrc" class="markdown"></markdown>
   </div>

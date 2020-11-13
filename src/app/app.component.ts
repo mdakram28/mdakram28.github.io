@@ -68,21 +68,6 @@ export class AppComponent implements AfterViewInit {
         .getElementById("scroll-icon")
         .classList.toggle("animate__fadeInDown");
     }, 5000);
-
-    // const i1 = setInterval(() => {
-    //   this.counts.awards += 1;
-    //   if (this.counts.awards >= 12) clearInterval(i1);
-    // }, 75);
-
-    // const i2 = setInterval(() => {
-    //   this.counts.hacks += 1;
-    //   if (this.counts.hacks >= 24) clearInterval(i2);
-    // }, 75);
-
-    // const i3 = setInterval(() => {
-    //   this.counts.projects += 1;
-    //   if (this.counts.projects >= 42) clearInterval(i3);
-    // }, 75);
   }
 
   startConsole(doneCallback) {
