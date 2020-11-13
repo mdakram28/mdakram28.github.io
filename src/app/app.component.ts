@@ -24,7 +24,7 @@ export class AppComponent implements AfterViewInit {
       this.startWebsiteTimeout = null;
     }
     $("body").addClass("slide-in-bottom");
-    $(".console").hide();
+    // $(".console").hide();
     setTimeout(() => {
       $("body").removeClass("slide-in-bottom");
       $("body").removeClass("hidden");
@@ -32,7 +32,7 @@ export class AppComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    if (!localStorage.getItem("firstVisited")) {
+    if (!localStorage.getItem("_firstVisited")) {
       setTimeout(() => {
         this.startConsole(() => {
           localStorage.setItem("firstVisited", new Date().toString());
@@ -69,23 +69,23 @@ export class AppComponent implements AfterViewInit {
   startConsole(doneCallback) {
     let content = `^d050python portfolio.py
 ^w1000^d010
-    Welcome to Akram's Portfolio
+Welcome to Akram's Portfolio
 
-    AKRAM ANSARI
-    ------------
-    Full Stack Developer | Blockchain Developer
+AKRAM ANSARI
+------------
+Full Stack Developer | Blockchain Developer
 
-    ^w1000Have a project or idea you'd like to discuss?^w1000
-    Let's chat mdakram28@gmail.com.^w1000
+^w1000Have a project or idea you'd like to discuss?^w1000
+Let's chat mdakram28@gmail.com.^w1000
 
-    24 Hackathons
-    42 Projects
-    12 Awards
+24 Hackathons
+42 Projects
+12 Awards
 
-    `;
+`;
 
     if (this.isTouchDevice()) {
-      content += "Touch anywhere to continue ...";
+      content += "Touch anywhere on screen to continue ...";
     } else {
       content += "Press any key to continue ...";
     }
