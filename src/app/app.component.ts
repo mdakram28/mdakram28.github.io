@@ -88,10 +88,13 @@ Welcome to Akram's Portfolio
 AKRAM ANSARI
 ------------
 Full Stack Developer | Blockchain Developer
-
-^w1000Have a project or idea you'd like to discuss?^w1000
-Let's chat mdakram28@gmail.com.^w1000
-
+^w1000
+"Talk is cheap. Show me the code."
+- Linus Torvalds
+^w1000
+Have a project or idea you'd like to discuss?^w1000
+Let's chat mdakram28@gmail.com.
+^w1000
 
 `;
 
