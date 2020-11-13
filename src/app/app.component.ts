@@ -92,9 +92,6 @@ Full Stack Developer | Blockchain Developer
 ^w1000Have a project or idea you'd like to discuss?^w1000
 Let's chat mdakram28@gmail.com.^w1000
 
-24 Hackathons
-42 Projects
-12 Awards
 
 `;
 
