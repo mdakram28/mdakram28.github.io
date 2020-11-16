@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
-import { BLOGS } from "../blogs";
+import BLOGS from "../../../assets/blogs.json";
 
 @Component({
   selector: "app-blog-holder",
