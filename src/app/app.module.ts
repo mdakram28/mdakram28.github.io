@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
-import { ProjectsComponent } from './projects-section/projects.component';
+import { ProjectsComponent } from './home/projects-section/projects.component';
 import { CommonModule } from '@angular/common';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { GalleryModule } from 'ng-gallery';
@@ -11,9 +11,11 @@ import { MarkdownModule } from 'ngx-markdown';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { FormsModule } from '@angular/forms';
-import { HacksSectionComponent } from './hacks-section/hacks-section.component';
+import { HacksSectionComponent } from './home/hacks-section/hacks-section.component';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { BlogHolderComponent } from './blog/blog-holder/blog-holder.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
     NavComponent,
     ProjectsComponent,
-    HacksSectionComponent
+    HacksSectionComponent,
+    HomeComponent,
+    BlogHolderComponent
   ],
   imports: [
     BrowserModule,

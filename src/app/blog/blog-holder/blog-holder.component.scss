@@ -1,0 +1,9 @@
+#blog {
+    padding: 50px;
+}
+
+@media (max-width: 540px) {
+    #blog {
+        padding: 20px;
+    }
+}
