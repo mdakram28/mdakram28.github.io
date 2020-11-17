@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnInit } from "@angular/core";
+import { Meta, Title } from "@angular/platform-browser";
 
 declare const $;
 
@@ -18,7 +19,7 @@ export class HomeComponent implements AfterViewInit {
     projects: 42,
   };
 
-  constructor() {
+  constructor(private titleService: Title, private meta: Meta) {
     this.startWebsite = this.startWebsite.bind(this);
   }
 
@@ -64,8 +65,25 @@ export class HomeComponent implements AfterViewInit {
     }
 
     setInterval(() => {
-      document.getElementById("scroll-icon").classList.toggle("animate__fadeInDown");
+      document
+        .getElementById("scroll-icon")
+        .classList.toggle("animate__fadeInDown");
     }, 5000);
+
+    // this.titleService.setTitle("");
+    // this.meta.updateTag({ name: "og:title", content: this.blog.title });
+    // this.meta.updateTag({
+    //   name: "og:description",
+    //   content: this.blog.description,
+    // });
+    // this.meta.updateTag({
+    //   name: "og:image",
+    //   content: this.blog.image,
+    // });
+    // this.meta.updateTag({
+    //   name: "og:type",
+    //   content: "port",
+    // });
   }
 
   startConsole(doneCallback) {

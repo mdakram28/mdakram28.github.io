@@ -22,17 +22,17 @@ export class BlogHolderComponent implements OnInit {
 
       // Social
       this.titleService.setTitle(this.blog.title);
-      this.meta.updateTag({ name: "og:title", content: this.blog.title });
+      this.meta.updateTag({ property: "og:title", content: this.blog.title });
       this.meta.updateTag({
-        name: "og:description",
+        property: "og:description",
         content: this.blog.description,
       });
       this.meta.updateTag({
-        name: "og:image",
+        property: "og:image",
         content: this.blog.image,
       });
       this.meta.updateTag({
-        name: "og:type",
+        property: "og:type",
         content: "article",
       });
     });
