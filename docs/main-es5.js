@@ -442,25 +442,49 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var ngx_markdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/platform-browser */
+    "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js");
+    /* harmony import */
+
+
+    var ngx_markdown__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ngx-markdown */
     "./node_modules/ngx-markdown/__ivy_ngcc__/fesm2015/ngx-markdown.js");
 
     var BlogHolderComponent =
     /*#__PURE__*/
     function () {
-      function BlogHolderComponent(route) {
+      function BlogHolderComponent(route, titleService, meta) {
         var _this = this;
 
         _classCallCheck(this, BlogHolderComponent);
 
         this.route = route;
+        this.titleService = titleService;
+        this.meta = meta;
         this.route.params.subscribe(function (params) {
           var slug = params.id.toLowerCase();
           _this.blog = _assets_blogs_json__WEBPACK_IMPORTED_MODULE_1__.find(function (b) {
             return b.slug.toLowerCase() == slug;
+          }); // Social
+
+          _this.titleService.setTitle(_this.blog.title);
+
+          _this.meta.updateTag({
+            name: "og:title",
+            content: _this.blog.title
           });
-          console.log(slug, _this.blog);
+
+          _this.meta.updateTag({
+            name: "og:description",
+            content: _this.blog.description
+          });
+
+          _this.meta.updateTag({
+            name: "og:image",
+            content: _this.blog.image
+          });
         });
       }
 
@@ -473,7 +497,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }();
 
     BlogHolderComponent.ɵfac = function BlogHolderComponent_Factory(t) {
-      return new (t || BlogHolderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]));
+      return new (t || BlogHolderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["Title"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["Meta"]));
     };
 
     BlogHolderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -497,7 +521,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("src", ctx.blog.markdownSrc);
         }
       },
-      directives: [ngx_markdown__WEBPACK_IMPORTED_MODULE_3__["MarkdownComponent"]],
+      directives: [ngx_markdown__WEBPACK_IMPORTED_MODULE_4__["MarkdownComponent"]],
       styles: ["#blog[_ngcontent-%COMP%] {\n  padding: 50px;\n}\n\n@media (max-width: 540px) {\n  #blog[_ngcontent-%COMP%] {\n    padding: 20px;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYmxvZy9ibG9nLWhvbGRlci9EOlxccHJvamVjdHNcXHBvcnRmb2xpby9zcmNcXGFwcFxcYmxvZ1xcYmxvZy1ob2xkZXJcXGJsb2ctaG9sZGVyLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9ibG9nL2Jsb2ctaG9sZGVyL2Jsb2ctaG9sZGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBQTtBQ0NKOztBREVBO0VBQ0k7SUFDSSxhQUFBO0VDQ047QUFDRiIsImZpbGUiOiJzcmMvYXBwL2Jsb2cvYmxvZy1ob2xkZXIvYmxvZy1ob2xkZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIjYmxvZyB7XHJcbiAgICBwYWRkaW5nOiA1MHB4O1xyXG59XHJcblxyXG5AbWVkaWEgKG1heC13aWR0aDogNTQwcHgpIHtcclxuICAgICNibG9nIHtcclxuICAgICAgICBwYWRkaW5nOiAyMHB4O1xyXG4gICAgfVxyXG59IiwiI2Jsb2cge1xuICBwYWRkaW5nOiA1MHB4O1xufVxuXG5AbWVkaWEgKG1heC13aWR0aDogNTQwcHgpIHtcbiAgI2Jsb2cge1xuICAgIHBhZGRpbmc6IDIwcHg7XG4gIH1cbn0iXX0= */"]
     });
     /*@__PURE__*/
@@ -513,6 +537,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }], function () {
         return [{
           type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]
+        }, {
+          type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["Title"]
+        }, {
+          type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["Meta"]
         }];
       }, null);
     })();
