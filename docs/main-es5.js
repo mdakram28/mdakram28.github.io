@@ -2903,7 +2903,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
   /***/
   function srcAssetsBlogsJson(module) {
-    module.exports = JSON.parse("[{\"title\":\"Creating your first Portfolio Website\",\"slug\":\"creating-portfolio\",\"markdownSrc\":\"https://raw.githubusercontent.com/mdakram28/blog/main/201116%20Making%20a%20portfolio/post.md\"}]");
+    module.exports = JSON.parse("[{\"title\":\"Creating your first Portfolio Website\",\"slug\":\"creating-portfolio\",\"markdownSrc\":\"https://gist.githubusercontent.com/mdakram28/f197903cfea7cf6ee40501bf621582aa/raw/c087532a3525d2d23d3a6e8bb52c1666b95fd4d3/Blog_creating-portfolio.md\"}]");
     /***/
   },
 
