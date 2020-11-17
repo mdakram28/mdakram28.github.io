@@ -249,6 +249,10 @@ class BlogHolderComponent {
                 name: "og:image",
                 content: this.blog.image,
             });
+            this.meta.updateTag({
+                name: "og:type",
+                content: "article",
+            });
         });
     }
     ngOnInit() { }

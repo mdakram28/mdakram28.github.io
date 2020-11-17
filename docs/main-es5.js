@@ -485,6 +485,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             name: "og:image",
             content: _this.blog.image
           });
+
+          _this.meta.updateTag({
+            name: "og:type",
+            content: "article"
+          });
         });
       }
 
