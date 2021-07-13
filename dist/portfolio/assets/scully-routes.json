@@ -1,1 +1,1 @@
-[{"route":"/blog/creating-portfolio"},{"route":"/"}]
+[{"route":"/blog/:id"},{"route":"/"}]

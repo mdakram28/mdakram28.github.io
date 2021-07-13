@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Creating your first Portfolio Website",
+    "slug": "creating-portfolio",
+    "markdownSrc": "/blogs/01_creating-portfolio.md",
+    "repo": "mdakram28/blog",
+    "updatedAt": "Nov 16, 2020",
+    "cover": "/blogs/img/cover2.webp"
+  }
+]

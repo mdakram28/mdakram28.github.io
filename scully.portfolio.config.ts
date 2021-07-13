@@ -12,7 +12,7 @@ export const config: ScullyConfig = {
       postRenderers: [baseHrefRewrite],
       baseHref: '/',
       id: {
-        url: 'http://localhost:4200/assets/blogs.json',
+        url: 'http://localhost:4200/blogs/blogs.json',
         resultsHandler: (response) => response.map(b => b.slug),
       }
     }

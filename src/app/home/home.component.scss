@@ -1,157 +1,160 @@
-
 #about {
-    max-width: none;
-    background: radial-gradient(ellipse at left top, #192633 0%, #000000 50%);
-    color: #ffffffc2;
-    h1 {
-      color: #fff;
+  max-width: none;
+  background: radial-gradient(ellipse at left top, #213c58 0%, #000000 50%);
+  color: #ffffffc2;
+  min-height: 100vh;
+  h1 {
+    color: #fff;
+  }
+  transition: 200ms;
+}
+
+#about-bg {
+  position: absolute;
+  right: 0px;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/img/silhouette.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.metrics {
+  font-size: 20px;
+  vertical-align: middle;
+  // tr > td:first-child {
+  //     width: 50px;
+  // }
+
+  tr {
+    transition: 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, transparent 50%, #33333373 50%);
+    background-position: 0% 0%;
+    &:hover {
+      background-position: -100% 0%;
     }
   }
-  
-  #about-bg {
-    position: absolute;
-    right: 0px;
-    width: 100%;
-    height: 100vh;
-    background-image: url(/assets/img/silhouette.png);
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    z-index: 0;
+  tr > td:first-child {
+    // width: 150px;
+    font-weight: bold;
+    font-size: 40px;
+    width: 60px;
+    color: #bd5d38;
+    cursor: pointer;
   }
-  
-  .metrics {
-    font-size: 20px;
-    vertical-align: middle;
-    // tr > td:first-child {
-    //     width: 50px;
-    // }
-  
-    tr {
-      transition: 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
-      background-size: 200% 100%;
-      background-image: linear-gradient(to right, transparent 50%, #33333373 50%);
-      background-position: 0% 0%;
-      &:hover {
-        background-position: -100% 0%;
-      }
+  tr > td:last-child {
+    // text-align: right;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    svg {
+      transition: 1s ease-out;
     }
-    tr > td:first-child {
-      // width: 150px;
-      font-weight: bold;
-      font-size: 40px;
-      width: 60px;
-      color: #bd5d38;
-      cursor: pointer;
-    }
-    tr > td:last-child {
-      // text-align: right;
-      text-transform: uppercase;
-      font-weight: 500;
-      font-size: 1.5rem;
-      cursor: pointer;
-  
+    &:hover {
+      color: white;
       svg {
-        transition: 1s ease-out;
-      }
-      &:hover {
-        color: white;
-        svg {
-          margin-left: 10px;
-        }
+        margin-left: 10px;
       }
     }
   }
-  
-  #about .resume-section-content {
-    position: relative;
-    .social-icons {
-      display: inline-block;
+}
+
+#about .resume-section-content {
+  position: relative;
+  .social-icons {
+    display: inline-block;
+  }
+  .scroll-icon {
+    position: absolute;
+    left: 50%;
+    // right: 50vw;
+    // margin-left: 20px;
+    font-size: 40px;
+    color: #6c757df5;
+    &:hover {
+      color: #e4e4e49c;
     }
-    .scroll-icon {
-      position: absolute;
-      left: 50%;
-      // right: 50vw;
-      // margin-left: 20px;
-      font-size: 40px;
-      color: #6c757df5;
-      &:hover {
-        color: #e4e4e49c;
+  }
+}
+
+.console {
+  display: none;
+  backdrop-filter: blur(10px);
+  color: white;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 0px;
+  left: 0px;
+  height: 100vh;
+
+  .shell {
+    background-color: #292e39;
+    margin: 50px;
+    max-width: 1000px;
+    height: 600px;
+    flex: 1;
+    border-radius: 5px;
+    padding: 15px 20px;
+    overflow: auto;
+
+    .toolbar {
+      font-size: 20px;
+    }
+    .commands {
+      font-size: 20px;
+      font-family: "Lucida Console", Monaco, monospace;
+      padding: 20px 10px;
+      white-space: pre;
+
+      #cursor {
+        display: inline-block;
+        width: 12px;
+        height: 20px;
+        margin-bottom: -2px;
+        background-color: rgba(255, 255, 255, 0.774);
       }
     }
   }
-  
-  .console {
+}
+
+::ng-deep body.hidden {
+  //   overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  #about-bg {
     display: none;
-    backdrop-filter: blur(10px);
-    color: white;
-    z-index: 2000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    right: 0px;
-    left: 0px;
-    height: 100vh;
-  
-    .shell {
-      background-color: #292e39;
-      margin: 50px;
-      max-width: 1000px;
-      height: 600px;
-      flex: 1;
-      border-radius: 5px;
-      padding: 15px 20px;
-      overflow: auto;
-  
-      .toolbar {
-        font-size: 20px;
-      }
-      .commands {
-        font-size: 20px;
-        font-family: "Lucida Console", Monaco, monospace;
-        padding: 20px 10px;
-        white-space: pre;
-  
-        #cursor {
-          display: inline-block;
-          width: 12px;
-          height: 20px;
-          margin-bottom: -2px;
-          background-color: rgba(255, 255, 255, 0.774);
-        }
+  }
+}
+
+@media (max-width: 576px) {
+  #about {
+    padding-top: 2rem;
+  }
+  .scroll-icon {
+    position: static !important;
+    // left: unset;
+    float: right !important;
+  }
+  .shell {
+    margin: 20px !important;
+
+    .toolbar {
+      font-size: 15px !important;
+    }
+    .commands {
+      font-size: 15px !important;
+      #cursor {
+        width: 9px !important;
+        height: 15px !important;
       }
     }
   }
-  
-  ::ng-deep body.hidden {
-    //   overflow: hidden;
-  }
-  
-  @media (max-width: 1000px) {
-    #about-bg {
-      display: none;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .scroll-icon {
-      position: static !important;
-      // left: unset;
-      float: right !important;
-    }
-    .shell {
-      margin: 20px !important;
-  
-      .toolbar {
-        font-size: 15px !important;
-      }
-      .commands {
-        font-size: 15px !important;
-        #cursor {
-          width: 9px !important;
-          height: 15px !important;
-        }
-      }
-    }
-  }
-  
+}

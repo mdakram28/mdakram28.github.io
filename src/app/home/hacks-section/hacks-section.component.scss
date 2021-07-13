@@ -12,7 +12,7 @@
   margin: 10px;
   background-color: #00000012;
   cursor: pointer;
-  transition: 200ms;
+  transition: 100ms ease-out;
   border-radius: 10px;
   border: none;
   // border: 1px solid rgb(0, 0, 0);
@@ -20,11 +20,46 @@
 
   &:hover {
     // .thumb {
-      filter: brightness(50%);
+    filter: brightness(120%);
+    transform: scale(1.1);
+    z-index: 10000;
+    box-shadow: 0 4px 15px 10px rgba(0, 0, 0, 0.2);
     // }
   }
   &:active {
     filter: opacity(0.5);
+  }
+
+  .ribbon {
+    background-color: #bd5d38;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    font-size: 20px;
+    padding: 15px 10px;
+    // filter: drop-shadow(2px 2px 1px #111);
+    color: wheat;
+    clip: rect(0px, 60px, 200px, 0px);
+    animation: unfold 1s ease-in;
+    // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   z-index: 2;
+    //   left: 0;
+    //   bottom: -21.1px;
+    //   border-left: 21.2px solid #bd5d38;
+    //   border-right: 21.2px solid #bd5d38;
+    //   border-bottom: 21.2px solid transparent;
+    // }
+  }
+  .winner {
+    // position: absolute;
+    // font-size: 30px;
+    // top: 10px;
+    // left: 10px;
+    // color: #dd7c55;
+    // filter: drop-shadow(1px 1px 2px #111);
   }
 
   .thumb {
@@ -75,5 +110,14 @@
 @media (max-width: 576px) {
   .card {
     width: 44%;
+  }
+}
+
+@-webkit-keyframes unfold {
+  from {
+    clip: rect(0px, 60px, 0px, 0px);
+  }
+  to {
+    clip: rect(0px, 60px, 200px, 0px);
   }
 }

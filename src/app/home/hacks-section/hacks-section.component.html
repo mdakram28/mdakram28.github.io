@@ -6,6 +6,7 @@
 
     <div class="hacks-list">
       <div class="card" *ngFor="let hack of collapsed ? (hacks | slice: 0:6) : hacks" [style.backgroundColor]="hack.thumbColor" (click)="openHack(hack)" [id]="hack.title">
+        <span *ngIf="hack.winner" class="ribbon"><i class="fas fa-trophy winner"></i></span>
         <div class="thumb" [style.backgroundImage]="'url(' + hack.thumb + ')'" [style.backgroundSize]="hack.thumbSize"></div>
         <div class="content">
           <span class="title">{{ hack.title }}</span>
