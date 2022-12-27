@@ -387,3 +387,35 @@ Using stored unhandled routes!.
 Could not fetch data for route "/blog/:id"
 Error during file write
 Error: ENOENT: no such file or directory, mkdir 'D:\projects\portfolio\docs\blog\:id'
+Could not fetch data for route "/blog/:id"
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------Could not fetch data for route "/blog/:id"
+
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------Could not fetch data for route "/blog/:id"
+
+Could not fetch data for route "/blog/:id"
+  route: /blog/:id. Try 1 failed with Error: timeout on /blog/:id  route: /. Try 1 failed with Error: timeout on /
+
+Could not fetch data for route "/blog/:id"
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------

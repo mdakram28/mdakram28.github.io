@@ -6,5 +6,12 @@
     "repo": "mdakram28/blog",
     "updatedAt": "Nov 16, 2020",
     "cover": "/blogs/img/cover2.webp"
+  }, {
+    "title": "ARM Assembly - Zero to Hero in 22 Days",
+    "slug": "arm-assembly",
+    "markdownSrc": "https://raw.githubusercontent.com/mdakram28/cpsc355/main/all_material.md",
+    "repo": "mdakram28/cpsc355",
+    "updatedAt": "December 27, 2022",
+    "cover": "/blogs/img/cover-boxing.jpg"
   }
 ]
