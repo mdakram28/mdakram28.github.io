@@ -7,16 +7,13 @@
       <span class="text-primary">Ansari</span>
     </h1>
     <div class="subheading mb-5">Full Stack Developer · Blockchain Developer</div>
-    <!-- <p class="lead mb-5">
-      Have a project or idea you'd like to discuss? <br />
-      Let's chat <a href="mailto:mdakram28@gmail.com">mdakram28@gmail.com</a>.
-    </p> -->
     <br/>
     <table class="metrics">
       <tr (click)="goto('hacks')" class="animate__animated animate__fadeInLeft" style="animation-delay: 1s">
         <!-- <td><i class="fas fa-mug-hot"></i></td> -->
         <td>
-          <span>{{ counts.hacks.toString().padStart(2, "0") }}</span>
+          <!-- <span>{{ counts.hacks.toString().padStart(2, "0") }}</span> -->
+          <span>xx</span>
         </td>
         <td>
           Hackathons
@@ -26,14 +23,16 @@
       <tr (click)="goto('projects')" class="animate__animated animate__fadeInLeft" style="animation-delay: 1.2s">
         <!-- <td><i class="fas fa-project-diagram"></i></td> -->
         <td>
-          <span>{{ counts.projects.toString().padStart(2, "0") }}</span>
+          <!-- <span>{{ counts.projects.toString().padStart(2, "0") }}</span> -->
+          <span>xx</span>
         </td>
         <td>Projects <i class="fas fa-long-arrow-alt-right"></i></td>
       </tr>
       <tr (click)="goto('awards')" class="animate__animated animate__fadeInLeft" style="animation-delay: 1.4s">
         <!-- <td><i class="fas fa-trophy"></i></td> -->
         <td>
-          <span>{{ counts.awards.toString().padStart(2, "0") }}</span>
+          <!-- <span>{{ counts.awards.toString().padStart(2, "0") }}</span> -->
+          <span>xx</span>
         </td>
         <td>Awards <i class="fas fa-long-arrow-alt-right"></i></td>
       </tr>
@@ -49,5 +48,6 @@
   </div>
 </section>
 <hr class="m-0" />
+<app-blogs-section></app-blogs-section>
 <app-projects-section></app-projects-section>
 <app-hacks-section></app-hacks-section>

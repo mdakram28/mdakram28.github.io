@@ -16,6 +16,7 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { BlogHolderComponent } from './blog/blog-holder/blog-holder.component';
+import { BlogsComponent } from './home/blogs-section/blogs.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { BlogHolderComponent } from './blog/blog-holder/blog-holder.component';
     NavComponent,
     ProjectsComponent,
     HacksSectionComponent,
+    BlogsComponent,
     HomeComponent,
     BlogHolderComponent
   ],

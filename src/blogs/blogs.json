@@ -1,17 +1,17 @@
 [
   {
-    "title": "Creating your first Portfolio Website",
-    "slug": "creating-portfolio",
-    "markdownSrc": "/blogs/01_creating-portfolio.md",
-    "repo": "mdakram28/blog",
-    "updatedAt": "Nov 16, 2020",
-    "cover": "/blogs/img/cover2.webp"
-  }, {
     "title": "ARM Assembly - Zero to Hero in 22 Days",
     "slug": "arm-assembly",
     "markdownSrc": "https://raw.githubusercontent.com/mdakram28/cpsc355/main/all_material.md",
     "repo": "mdakram28/cpsc355",
     "updatedAt": "December 27, 2022",
-    "cover": "/blogs/img/cover-boxing.jpg"
+    "cover": "/blogs/img/cover-rpi.jpg",
+    "description": "I have been teaching ARM assembly to university students. This article is adapted from the tutorial material for a Computer Science Course - CPSC355 that I taught in 2022 and is meant to teach the basics of assembly, c and the inner working of a computer application. The article will focus on understanding how a computer program is written and how that program is understood and executed by the processor. We will write assemble for the 64-bit ARMv8 architecture CPU. We will also understand what the binary code of a program written in C looks like. We will run the program in a Linux OS.",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/mdakram28/cpsc355"
+      }
+    ]
   }
 ]
