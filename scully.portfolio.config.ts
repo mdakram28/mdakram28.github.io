@@ -1,6 +1,6 @@
 import { RouteTypes, ScullyConfig } from '@scullyio/scully';
 import { baseHrefRewrite } from '@scullyio/scully-plugin-base-href-rewrite';
-// import { DisableAngular } from 'scully-plugin-disable-angular';
+import { DisableAngular } from 'scully-plugin-disable-angular';
 
 export const config: ScullyConfig = {
   projectRoot: "./src",
@@ -9,7 +9,7 @@ export const config: ScullyConfig = {
   routes: {
     '/blog/:id': {
       type: RouteTypes.json,
-      postRenderers: [baseHrefRewrite],
+      postRenderers: [baseHrefRewrite, DisableAngular],
       baseHref: '/',
       id: {
         url: 'http://localhost:4200/blogs/blogs.json',
