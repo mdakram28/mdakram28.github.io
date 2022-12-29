@@ -1,5 +1,19 @@
 [
   {
+    "title": "Python - Full Course for beginners",
+    "slug": "python",
+    "markdownSrc": "https://raw.githubusercontent.com/mdakram28/CPSC217-W22/master/full_course.md",
+    "repo": "mdakram28/CPSC217-W22",
+    "updatedAt": "December 28, 2022",
+    "cover": "/blogs/img/cover-python.png",
+    "description": "I teach Python to university students. This article is meant to teach the basics to programming using python to an absolute beginner with no programming experience. After following this article you will be able to understand and write your own intermediate level python code.",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/mdakram28/CPSC217-W22"
+      }
+    ]
+  }, {
     "title": "ARM Assembly - Zero to Hero in 22 Days",
     "slug": "arm-assembly",
     "markdownSrc": "https://raw.githubusercontent.com/mdakram28/cpsc355/main/all_material.md",
