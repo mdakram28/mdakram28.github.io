@@ -15,8 +15,8 @@ export const config: ScullyConfig = {
         url: 'http://localhost:4200/blogs/blogs.json',
         resultsHandler: (response) => response.map(b => b.slug),
       }
-    }
-  },
+    } 
+        },
   puppeteerLaunchOptions: {
     args: [
       "--disable-gpu",
