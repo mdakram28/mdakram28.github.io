@@ -1,6 +1,6 @@
 import { RouteTypes, ScullyConfig } from '@scullyio/scully';
 import { baseHrefRewrite } from '@scullyio/scully-plugin-base-href-rewrite';
-
+// import { DisableAngular } from 'scully-plugin-disable-angular';
 
 export const config: ScullyConfig = {
   projectRoot: "./src",

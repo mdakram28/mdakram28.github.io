@@ -8615,6 +8615,13 @@ schematics-utilities@^2.0.0:
   optionalDependencies:
     parse5 "^5.1.0"
 
+scully-plugin-disable-angular@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/scully-plugin-disable-angular/-/scully-plugin-disable-angular-8.0.0.tgz#88be9d3bb77a0ed9b9b530a86f55555ad79e3945"
+  integrity sha512-lc4IjVNafeXLPa7k97OtYqljDFWA5O3PgtFXBFeI7u7EMDN4AUy5CkRuKlIBAXlC8uxXq6JBctz4AX5eNjAj5g==
+  dependencies:
+    tslib "^2.0.0"
+
 select-hose@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/select-hose/-/select-hose-2.0.0.tgz#625d8658f865af43ec962bfc376a37359a4994ca"
