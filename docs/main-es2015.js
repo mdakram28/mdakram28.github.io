@@ -841,6 +841,7 @@ class HomeComponent {
             projects: 42,
         };
         this.startWebsite = this.startWebsite.bind(this);
+        console.log("window.location.pathname.toLowerCase()", window.location.pathname.toLowerCase());
         if (window.location.pathname.toLowerCase() === "/av1-parser-gui") {
             window.location.pathname = "media-parser-gui";
         }
