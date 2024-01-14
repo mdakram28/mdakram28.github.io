@@ -842,7 +842,7 @@ class HomeComponent {
         };
         this.startWebsite = this.startWebsite.bind(this);
         console.log("window.location.pathname.toLowerCase()", window.location.pathname.toLowerCase());
-        if (window.location.pathname.toLowerCase() === "/av1-parser-gui") {
+        if (window.location.pathname.toLowerCase().startsWith("/av1-parser-gui")) {
             window.location.pathname = "media-parser-gui";
         }
     }
