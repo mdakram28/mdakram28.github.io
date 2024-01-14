@@ -841,11 +841,11 @@ class HomeComponent {
             projects: 42,
         };
         this.startWebsite = this.startWebsite.bind(this);
-    }
-    startWebsite() {
         if (window.location.pathname.toLowerCase() === "/av1-parser-gui") {
             window.location.pathname = "media-parser-gui";
         }
+    }
+    startWebsite() {
         clearTimeout(this.startWebsiteTimeout);
         $(document).off("click", this.startWebsite);
         $(document).off("keypress", this.startWebsite);

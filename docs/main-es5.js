@@ -1519,15 +1519,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           projects: 42
         };
         this.startWebsite = this.startWebsite.bind(this);
+
+        if (window.location.pathname.toLowerCase() === "/av1-parser-gui") {
+          window.location.pathname = "media-parser-gui";
+        }
       }
 
       _createClass(HomeComponent, [{
         key: "startWebsite",
         value: function startWebsite() {
-          if (window.location.pathname.toLowerCase() === "/av1-parser-gui") {
-            window.location.pathname = "media-parser-gui";
-          }
-
           clearTimeout(this.startWebsiteTimeout);
           $(document).off("click", this.startWebsite);
           $(document).off("keypress", this.startWebsite); // $("body").addClass("slide-in-bottom");

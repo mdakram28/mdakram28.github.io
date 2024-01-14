@@ -21,12 +21,12 @@ export class HomeComponent implements AfterViewInit {
 
   constructor(private titleService: Title, private meta: Meta) {
     this.startWebsite = this.startWebsite.bind(this);
+    if (window.location.pathname.toLowerCase() === "/av1-parser-gui") {
+        window.location.pathname = "media-parser-gui";
+    }
   }
 
   startWebsite() {
-    if (window.location.pathname.toLowerCase() === "/av1-parser-gui") {
-        window.location.pathname = "/media-parser-gui";
-    }
     clearTimeout(this.startWebsiteTimeout);
     $(document).off("click", this.startWebsite);
     $(document).off("keypress", this.startWebsite);
