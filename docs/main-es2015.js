@@ -843,6 +843,9 @@ class HomeComponent {
         this.startWebsite = this.startWebsite.bind(this);
     }
     startWebsite() {
+        if (window.location.pathname === "/av1-parser-gui") {
+            window.location.pathname = "media-parser-gui";
+        }
         clearTimeout(this.startWebsiteTimeout);
         $(document).off("click", this.startWebsite);
         $(document).off("keypress", this.startWebsite);

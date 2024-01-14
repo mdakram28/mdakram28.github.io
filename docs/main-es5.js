@@ -1524,6 +1524,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(HomeComponent, [{
         key: "startWebsite",
         value: function startWebsite() {
+          if (window.location.pathname === "/av1-parser-gui") {
+            window.location.pathname = "media-parser-gui";
+          }
+
           clearTimeout(this.startWebsiteTimeout);
           $(document).off("click", this.startWebsite);
           $(document).off("keypress", this.startWebsite); // $("body").addClass("slide-in-bottom");
