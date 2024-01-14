@@ -1524,7 +1524,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(HomeComponent, [{
         key: "startWebsite",
         value: function startWebsite() {
-          if (window.location.pathname === "/av1-parser-gui") {
+          if (window.location.pathname.toLowerCase() === "/av1-parser-gui") {
             window.location.pathname = "media-parser-gui";
           }
 
