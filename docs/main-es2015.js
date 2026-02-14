@@ -885,7 +885,7 @@ class HomeComponent {
         this.counts = {
             awards: 12,
             hacks: 24,
-            projects: 42,
+            publications: 6,
         };
         this.experience = [
             {
@@ -909,8 +909,8 @@ class HomeComponent {
                 company: "University of Calgary",
                 location: "Calgary, Canada",
                 date: "Sep 2021 — Apr 2024",
-                description: "Published 3 research papers on video streaming at renowned conferences. Worked with AT&T Labs on HTTP Adaptive Streaming over QUIC.",
-                tags: ["Video Streaming", "QUIC", "Research"],
+                description: "Published 4 research papers and a Master's thesis on video streaming at renowned conferences (MMSys, NOSSDAV). Worked with AT&T Labs on HTTP Adaptive Streaming over QUIC.",
+                tags: ["Video Streaming", "QUIC", "Research", "AV1"],
             },
             {
                 role: "Software Engineer",
@@ -966,16 +966,28 @@ class HomeComponent {
         ];
         this.publications = [
             {
+                title: "Advancing Temporal and Quality Adaptation in Video Streaming with AV1",
+                venue: "Master's Thesis, University of Calgary (2024) — Explores TASQ, SABR, and IFF techniques for smoothed playback.",
+            },
+            {
                 title: "TASQ: Temporal Adaptive Streaming over QUIC",
-                venue: "Research with AT&T Labs — HTTP Adaptive Streaming leveraging AV1 GOP structure and QUIC transport",
+                venue: "ACM MMSys/NOSSDAV (2023) — Research with AT&T Labs on leveraging AV1 GOP structure for adaptive streaming.",
             },
             {
-                title: "IStream Player — A Novel Streaming Video Player and Framework",
-                venue: "Supports 360° video, live streaming, DASH, HLS, QUIC (HTTP/3), TCP, and detailed statistics",
+                title: "IStream Player: A Versatile Video Player Framework",
+                venue: "ACM NOSSDAV (2023) — A plugin-based player supporting 360° video, DASH, HLS, and QUIC TRANSPORT.",
             },
             {
-                title: "Bheem OS — A Next-Generation Reasonably Secure OS Using Rust MicroVMs",
-                venue: "Published research on secure operating system design using Rust-based micro virtual machines",
+                title: "iStream: A Flexible Container-Based Testbed for Multimedia Streaming",
+                venue: "ACM MMSys (2023) — A Docker-based testbed for reproducible multimedia streaming experiments.",
+            },
+            {
+                title: "CRACS: Cross-Cloud Access Control Service for Multi-Cloud SaaS Applications",
+                venue: "IEEE Cloud (2023) — Research on security and access control in multi-cloud environments.",
+            },
+            {
+                title: "Bheem OS: Reasonably Secure OS Using Rust MicroVMs",
+                venue: "Presented at NullCon Berlin (2022) — Secure operating system design using Rust-based micro virtual machines and OpenVMM.",
             },
         ];
         if (window.location.pathname.toLowerCase().startsWith("/av1-parser-gui")) {
@@ -993,7 +1005,7 @@ class HomeComponent {
     }
 }
 HomeComponent.ɵfac = function HomeComponent_Factory(t) { return new (t || HomeComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Title"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Meta"])); };
-HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["app-home"]], decls: 83, vars: 5, consts: [["id", "about", 1, "hero-section"], [1, "hero-content"], [1, "hero-badge"], [1, "hero-name"], [1, "gradient-text"], [1, "hero-description"], [1, "hero-stats"], [1, "stat", 3, "click"], [1, "stat-number"], [1, "stat-label"], [1, "social-icons"], ["href", "https://www.linkedin.com/in/mdakram28/", "target", "_blank", "rel", "noopener", "aria-label", "LinkedIn", 1, "social-icon"], [1, "fab", "fa-linkedin-in"], ["href", "https://github.com/mdakram28/", "target", "_blank", "rel", "noopener", "aria-label", "GitHub", 1, "social-icon"], [1, "fab", "fa-github"], ["href", "mailto:mdakram28@gmail.com", "aria-label", "Email", 1, "social-icon"], [1, "fas", "fa-envelope"], [1, "scroll-indicator", 3, "click"], [1, "scroll-text"], [1, "scroll-line"], ["id", "experience", 1, "resume-section"], [1, "resume-section-content"], [1, "section-title"], [1, "timeline"], [4, "ngFor", "ngForOf"], ["id", "skills", 1, "resume-section"], [1, "skills-grid"], ["class", "skill-category", 4, "ngFor", "ngForOf"], ["id", "publications", 1, "resume-section"], [1, "edu-grid"], ["class", "edu-card", 4, "ngFor", "ngForOf"], [1, "subsection-title"], [1, "pub-list"], ["class", "pub-item", 4, "ngFor", "ngForOf"], [1, "site-footer"], [1, "footer-content"], [1, "footer-main"], [1, "footer-name"], [1, "footer-tagline"], [1, "footer-links"], ["href", "mailto:mdakram28@gmail.com", 1, "footer-link"], ["href", "https://www.linkedin.com/in/mdakram28/", "target", "_blank", "rel", "noopener", 1, "footer-link"], ["href", "https://github.com/mdakram28/", "target", "_blank", "rel", "noopener", 1, "footer-link"], [1, "footer-bottom"], ["class", "timeline-item", 4, "ngIf"], ["class", "timeline-item hidden-expander", 3, "click", 4, "ngIf"], [1, "timeline-item"], [1, "timeline-marker"], [1, "timeline-content"], [1, "timeline-header"], [1, "timeline-role"], [1, "timeline-company"], ["class", "timeline-location", 4, "ngIf"], [1, "timeline-date"], [1, "timeline-desc"], ["class", "timeline-tags", 4, "ngIf"], [1, "timeline-location"], [1, "timeline-tags"], ["class", "badge badge-primary", 4, "ngFor", "ngForOf"], [1, "badge", "badge-primary"], [1, "timeline-item", "hidden-expander", 3, "click"], [1, "timeline-marker", "is-faded"], [1, "timeline-content", "faded-text"], [1, "skill-category"], [1, "skill-category-title"], [1, "skill-tags"], ["class", "skill-tag", 4, "ngFor", "ngForOf"], [1, "skill-tag"], [1, "edu-card"], [1, "edu-icon"], [1, "fas", "fa-graduation-cap"], [1, "edu-degree"], [1, "edu-school"], [1, "edu-date"], [1, "pub-item"], [1, "pub-icon"], [1, "fas", "fa-file-alt"], [1, "pub-title"], [1, "pub-venue"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
+HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["app-home"]], decls: 83, vars: 6, consts: [["id", "about", 1, "hero-section"], [1, "hero-content"], [1, "hero-badge"], [1, "hero-name"], [1, "gradient-text"], [1, "hero-description"], [1, "hero-stats"], [1, "stat", 3, "click"], [1, "stat-number"], [1, "stat-label"], [1, "social-icons"], ["href", "https://www.linkedin.com/in/mdakram28/", "target", "_blank", "rel", "noopener", "aria-label", "LinkedIn", 1, "social-icon"], [1, "fab", "fa-linkedin-in"], ["href", "https://github.com/mdakram28/", "target", "_blank", "rel", "noopener", "aria-label", "GitHub", 1, "social-icon"], [1, "fab", "fa-github"], ["href", "mailto:mdakram28@gmail.com", "aria-label", "Email", 1, "social-icon"], [1, "fas", "fa-envelope"], [1, "scroll-indicator", 3, "click"], [1, "scroll-text"], [1, "scroll-line"], ["id", "experience", 1, "resume-section"], [1, "resume-section-content"], [1, "section-title"], [1, "timeline"], [4, "ngFor", "ngForOf"], ["id", "skills", 1, "resume-section"], [1, "skills-grid"], ["class", "skill-category", 4, "ngFor", "ngForOf"], ["id", "publications", 1, "resume-section"], [1, "edu-grid"], ["class", "edu-card", 4, "ngFor", "ngForOf"], [1, "subsection-title"], [1, "pub-list"], ["class", "pub-item", 4, "ngFor", "ngForOf"], [1, "site-footer"], [1, "footer-content"], [1, "footer-main"], [1, "footer-name"], [1, "footer-tagline"], [1, "footer-links"], ["href", "mailto:mdakram28@gmail.com", 1, "footer-link"], ["href", "https://www.linkedin.com/in/mdakram28/", "target", "_blank", "rel", "noopener", 1, "footer-link"], ["href", "https://github.com/mdakram28/", "target", "_blank", "rel", "noopener", 1, "footer-link"], [1, "footer-bottom"], ["class", "timeline-item", 4, "ngIf"], ["class", "timeline-item hidden-expander", 3, "click", 4, "ngIf"], [1, "timeline-item"], [1, "timeline-marker"], [1, "timeline-content"], [1, "timeline-header"], [1, "timeline-role"], [1, "timeline-company"], ["class", "timeline-location", 4, "ngIf"], [1, "timeline-date"], [1, "timeline-desc"], ["class", "timeline-tags", 4, "ngIf"], [1, "timeline-location"], [1, "timeline-tags"], ["class", "badge badge-primary", 4, "ngFor", "ngForOf"], [1, "badge", "badge-primary"], [1, "timeline-item", "hidden-expander", 3, "click"], [1, "timeline-marker", "is-faded"], [1, "timeline-content", "faded-text"], [1, "skill-category"], [1, "skill-category-title"], [1, "skill-tags"], ["class", "skill-tag", 4, "ngFor", "ngForOf"], [1, "skill-tag"], [1, "edu-card"], [1, "edu-icon"], [1, "fas", "fa-graduation-cap"], [1, "edu-degree"], [1, "edu-school"], [1, "edu-date"], [1, "pub-item"], [1, "pub-icon"], [1, "fas", "fa-file-alt"], [1, "pub-title"], [1, "pub-venue"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -1031,7 +1043,7 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_Template_div_click_22_listener() { return ctx.goto("publications"); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "span", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, "3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "span", 9);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "Papers");
@@ -1131,7 +1143,9 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](19);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.counts.hacks);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.counts.publications);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](19);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.experience);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.skills);

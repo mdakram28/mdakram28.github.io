@@ -12,7 +12,7 @@ export class HomeComponent {
   counts = {
     awards: 12,
     hacks: 24,
-    projects: 42,
+    publications: 6,
   };
 
   experience = [
@@ -37,8 +37,8 @@ export class HomeComponent {
       company: "University of Calgary",
       location: "Calgary, Canada",
       date: "Sep 2021 — Apr 2024",
-      description: "Published 3 research papers on video streaming at renowned conferences. Worked with AT&T Labs on HTTP Adaptive Streaming over QUIC.",
-      tags: ["Video Streaming", "QUIC", "Research"],
+      description: "Published 4 research papers and a Master's thesis on video streaming at renowned conferences (MMSys, NOSSDAV). Worked with AT&T Labs on HTTP Adaptive Streaming over QUIC.",
+      tags: ["Video Streaming", "QUIC", "Research", "AV1"],
     },
     {
       role: "Software Engineer",
@@ -98,16 +98,28 @@ export class HomeComponent {
 
   publications = [
     {
+      title: "Advancing Temporal and Quality Adaptation in Video Streaming with AV1",
+      venue: "Master's Thesis, University of Calgary (2024) — Explores TASQ, SABR, and IFF techniques for smoothed playback.",
+    },
+    {
       title: "TASQ: Temporal Adaptive Streaming over QUIC",
-      venue: "Research with AT&T Labs — HTTP Adaptive Streaming leveraging AV1 GOP structure and QUIC transport",
+      venue: "ACM MMSys/NOSSDAV (2023) — Research with AT&T Labs on leveraging AV1 GOP structure for adaptive streaming.",
     },
     {
-      title: "IStream Player — A Novel Streaming Video Player and Framework",
-      venue: "Supports 360° video, live streaming, DASH, HLS, QUIC (HTTP/3), TCP, and detailed statistics",
+      title: "IStream Player: A Versatile Video Player Framework",
+      venue: "ACM NOSSDAV (2023) — A plugin-based player supporting 360° video, DASH, HLS, and QUIC TRANSPORT.",
     },
     {
-      title: "Bheem OS — A Next-Generation Reasonably Secure OS Using Rust MicroVMs",
-      venue: "Published research on secure operating system design using Rust-based micro virtual machines",
+      title: "iStream: A Flexible Container-Based Testbed for Multimedia Streaming",
+      venue: "ACM MMSys (2023) — A Docker-based testbed for reproducible multimedia streaming experiments.",
+    },
+    {
+      title: "CRACS: Cross-Cloud Access Control Service for Multi-Cloud SaaS Applications",
+      venue: "IEEE Cloud (2023) — Research on security and access control in multi-cloud environments.",
+    },
+    {
+      title: "Bheem OS: Reasonably Secure OS Using Rust MicroVMs",
+      venue: "Presented at NullCon Berlin (2022) — Secure operating system design using Rust-based micro virtual machines and OpenVMM.",
     },
   ];
 
