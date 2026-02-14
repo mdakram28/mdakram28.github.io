@@ -15,20 +15,10 @@ export const config: ScullyConfig = {
         url: 'http://localhost:4200/blogs/blogs.json',
         resultsHandler: (response) => response.map(b => b.slug),
       }
-    } 
-        },
+    }
+  },
   puppeteerLaunchOptions: {
-    args: [
-      "--disable-gpu",
-      "--renderer",
-      "--no-sandbox",
-      "--no-experiments",
-      "--no-default-browser-check",
-      "--disable-dev-shm-usage",
-      "--disable-setuid-sandbox",
-      "--no-zygote",
-      "--single-process",
-      "--disable-extensions"
-    ]
+    executablePath: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
   }
 };
