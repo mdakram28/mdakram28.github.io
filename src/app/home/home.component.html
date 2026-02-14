@@ -132,7 +132,12 @@
       <article class="pub-item" *ngFor="let pub of publications">
         <div class="pub-icon"><i class="fas fa-file-alt"></i></div>
         <div>
-          <h4 class="pub-title">{{ pub.title }}</h4>
+          <h4 class="pub-title">
+            <a [href]="pub.url" target="_blank" rel="noopener" class="pub-link">
+              {{ pub.title }} <i class="fas fa-external-link-alt"
+                style="font-size: 0.8rem; opacity: 0.6; margin-left: 4px;"></i>
+            </a>
+          </h4>
           <div class="pub-venue">{{ pub.venue }}</div>
         </div>
       </article>

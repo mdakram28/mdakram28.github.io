@@ -100,26 +100,32 @@ export class HomeComponent {
     {
       title: "Advancing Temporal and Quality Adaptation in Video Streaming with AV1",
       venue: "Master's Thesis, University of Calgary (2024) — Explores TASQ, SABR, and IFF techniques for smoothed playback.",
+      url: "https://doi.org/10.11575/PRISM/43279",
     },
     {
       title: "TASQ: Temporal Adaptive Streaming over QUIC",
       venue: "ACM MMSys/NOSSDAV (2023) — Research with AT&T Labs on leveraging AV1 GOP structure for adaptive streaming.",
+      url: "https://dl.acm.org/doi/10.1145/3593856.3595914",
     },
     {
       title: "IStream Player: A Versatile Video Player Framework",
       venue: "ACM NOSSDAV (2023) — A plugin-based player supporting 360° video, DASH, HLS, and QUIC TRANSPORT.",
+      url: "https://dl.acm.org/doi/10.1145/3593856.3592823",
     },
     {
       title: "iStream: A Flexible Container-Based Testbed for Multimedia Streaming",
       venue: "ACM MMSys (2023) — A Docker-based testbed for reproducible multimedia streaming experiments.",
+      url: "https://dl.acm.org/doi/10.1145/3583960.3589196",
     },
     {
       title: "CRACS: Cross-Cloud Access Control Service for Multi-Cloud SaaS Applications",
       venue: "IEEE Cloud (2023) — Research on security and access control in multi-cloud environments.",
+      url: "https://ieeexplore.ieee.org/document/10254921",
     },
     {
       title: "Bheem OS: Reasonably Secure OS Using Rust MicroVMs",
       venue: "Presented at NullCon Berlin (2022) — Secure operating system design using Rust-based micro virtual machines and OpenVMM.",
+      url: "https://nullcon.net/berlin-2022/speakers/akram-ansari/",
     },
   ];
 
