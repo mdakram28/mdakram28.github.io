@@ -23,7 +23,16 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": ["src/favicon.ico", "src/assets/google7cfe3b715a3bf4ea.html", "src/assets/CNAME", "src/assets", "src/blogs"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets/google7cfe3b715a3bf4ea.html",
+              "src/assets/CNAME",
+              "src/assets",
+              "src/blogs",
+              "src/robots.txt",
+              "src/sitemap.xml",
+              "src/404.html"
+            ],
             "styles": [
               "src/styles.scss",
               "node_modules/prismjs/themes/prism-okaidia.css"
@@ -90,8 +99,13 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
             "scripts": []
           }
         },
@@ -103,7 +117,9 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "e2e": {

@@ -4,14 +4,15 @@
 
     <div class="hacks-grid">
       <div class="hack-card" *ngFor="let hack of collapsed ? (hacks | slice: 0:6) : hacks"
-        [style.backgroundColor]="hack.thumbColor" (click)="openHack(hack)" [id]="hack.title">
+        [style.backgroundColor]="hack.thumbColor" (click)="openHack(hack)" [id]="hack.title"
+        [attr.aria-label]="'View details for ' + hack.title + ' hackathon ' + hack.year">
         <span *ngIf="hack.winner" class="trophy-badge">
           <i class="fas fa-trophy"></i>
         </span>
         <div class="hack-thumb" [style.backgroundImage]="'url(' + hack.thumb + ')'"
           [style.backgroundSize]="hack.thumbSize"></div>
         <div class="hack-info">
-          <span class="hack-title">{{ hack.title }}</span>
+          <h3 class="hack-title">{{ hack.title }}</h3>
           <span class="hack-year">{{ hack.year }}</span>
         </div>
       </div>

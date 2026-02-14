@@ -7,7 +7,7 @@
         <div class="card-thumbnail-wrapper" [style.backgroundColor]="proj.thumbnail_bg || ''">
           <div [style.backgroundImage]="'url(\'' + proj.thumbnail + '\')'"
             [style.backgroundSize]="proj.thumbnail_size || 'cover'" class="card-thumbnail"
-            (click)="openProjectModal(proj)"></div>
+            (click)="openProjectModal(proj)" [attr.aria-label]="'View ' + proj.title + ' project gallery'"></div>
         </div>
         <div class="card-body-content">
           <h3 class="card-title" (click)="openProjectModal(proj)">
