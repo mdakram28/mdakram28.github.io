@@ -1,40 +1,33 @@
-<nav
-  class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
-  id="sideNav"
->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
   <a class="navbar-brand js-scroll-trigger" href="#page-top">
-    <span class="d-block d-lg-none">Akram Ansari</span>
-    <span class="d-none d-lg-block"
-      ><img
-        class="img-fluid img-profile rounded-circle mx-auto mb-2"
-        src="assets/img/profile.jpg"
-        alt="Profile Image"
-    /></span>
+    <span class="d-none d-lg-block">
+      <img class="img-fluid img-profile rounded-circle" src="assets/img/profile.jpg" alt="Akram Ansari" />
+    </span>
+    <span class="brand-name">Akram Ansari</span>
   </a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger animate__animated animate__fadeInUp" style="animation-delay: 2.1s;" (click)="goto('about')">About</a>
+        <a class="nav-link" (click)="goto('about')">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger animate__animated animate__fadeInUp" style="animation-delay: 2.1s;" (click)="goto('blog')">Blog</a>
+        <a class="nav-link" (click)="goto('experience')">Experience</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger animate__animated animate__fadeInUp" style="animation-delay: 2.2s;" (click)="goto('projects')">Projects</a>
+        <a class="nav-link" (click)="goto('skills')">Skills</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger animate__animated animate__fadeInUp" style="animation-delay: 2.3s;" (click)="goto('hacks')">Hackathons</a>
+        <a class="nav-link" (click)="goto('blog')">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="goto('projects')">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="goto('hacks')">Hackathons</a>
       </li>
     </ul>
   </div>

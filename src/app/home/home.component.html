@@ -1,53 +1,169 @@
-<!-- About-->
-<section class="resume-section" id="about">
-  <div id="about-bg" class=""></div>
-  <div class="resume-section-content">
-    <h1 class="mb-0 focus-in-contract-bck">
-      Akram
-      <span class="text-primary">Ansari</span>
+<!-- Hero -->
+<section class="hero-section" id="about">
+  <div class="hero-content">
+    <div class="hero-badge">Senior Software Engineer @ Confluent</div>
+    <h1 class="hero-name">
+      Akram<br />
+      <span class="gradient-text">Ansari</span>
     </h1>
-    <div class="subheading mb-5">Full Stack Developer · Video Streaming Research Student</div>
-    <br/>
-    <table class="metrics">
-      <tr (click)="goto('hacks')" class="animate__animated animate__fadeInLeft" style="animation-delay: 1s">
-        <!-- <td><i class="fas fa-mug-hot"></i></td> -->
-        <td>
-          <!-- <span>{{ counts.hacks.toString().padStart(2, "0") }}</span> -->
-          <span>xx</span>
-        </td>
-        <td>
-          Hackathons
-          <i class="fas fa-long-arrow-alt-right"></i>
-        </td>
-      </tr>
-      <tr (click)="goto('projects')" class="animate__animated animate__fadeInLeft" style="animation-delay: 1.2s">
-        <!-- <td><i class="fas fa-project-diagram"></i></td> -->
-        <td>
-          <!-- <span>{{ counts.projects.toString().padStart(2, "0") }}</span> -->
-          <span>xx</span>
-        </td>
-        <td>Projects <i class="fas fa-long-arrow-alt-right"></i></td>
-      </tr>
-      <tr (click)="goto('awards')" class="animate__animated animate__fadeInLeft" style="animation-delay: 1.4s">
-        <!-- <td><i class="fas fa-trophy"></i></td> -->
-        <td>
-          <!-- <span>{{ counts.awards.toString().padStart(2, "0") }}</span> -->
-          <span>xx</span>
-        </td>
-        <td>Awards <i class="fas fa-long-arrow-alt-right"></i></td>
-      </tr>
-    </table>
-    <br />
-    <div class="social-icons">
-      <a class="social-icon animate__animated animate__bounceIn" style="animation-delay: 2.1s" href="https://www.linkedin.com/in/mdakram28/"><i class="fab fa-linkedin-in"></i></a>
-      <a class="social-icon animate__animated animate__bounceIn" style="animation-delay: 2.2s" href="https://github.com/mdakram28/"><i class="fab fa-github"></i></a>
-      <a class="social-icon animate__animated animate__bounceIn" style="animation-delay: 2.3s" href="https://github.com/mdakram28/"><i class="fab fa-facebook-f"></i></a>
+    <p class="hero-description">
+      Software engineer with 4 years of systems engineering experience (in C++, Python & Rust) and 2 years of systems
+      research experience. Proven record of large-scale distributed systems development and a knack for low-level
+      network systems design.
+    </p>
+
+    <div class="hero-stats">
+      <div class="stat" (click)="goto('experience')">
+        <span class="stat-number">6+</span>
+        <span class="stat-label">Years Exp</span>
+      </div>
+      <div class="stat" (click)="goto('hacks')">
+        <span class="stat-number">{{ counts.hacks }}</span>
+        <span class="stat-label">Hackathons</span>
+      </div>
+      <div class="stat" (click)="goto('publications')">
+        <span class="stat-number">3</span>
+        <span class="stat-label">Papers</span>
+      </div>
     </div>
 
-    <a id="scroll-icon" class="scroll-icon animate__animated" href="#projects"><i class="fas fa-chevron-down"></i></a>
+    <div class="social-icons">
+      <a class="social-icon" href="https://www.linkedin.com/in/mdakram28/" target="_blank" rel="noopener"
+        aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a class="social-icon" href="https://github.com/mdakram28/" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a class="social-icon" href="mailto:mdakram28@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="scroll-indicator" (click)="goto('experience')">
+    <span class="scroll-text">Scroll</span>
+    <div class="scroll-line"></div>
   </div>
 </section>
-<hr class="m-0" />
+
+<!-- Experience -->
+<section class="resume-section" id="experience">
+  <div class="resume-section-content">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+      <ng-container *ngFor="let job of experience; let i = index">
+        <!-- Visible Items -->
+        <article class="timeline-item" *ngIf="i < 2 || i > 4 || showHiddenExperience">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">{{ job.role }}</h3>
+                <div class="timeline-company">
+                  <span>{{ job.company }}</span>
+                  <span class="timeline-location" *ngIf="job.location"> · {{ job.location }}</span>
+                </div>
+              </div>
+              <span class="timeline-date">{{ job.date }}</span>
+            </div>
+            <p class="timeline-desc">{{ job.description }}</p>
+            <div class="timeline-tags" *ngIf="job.tags">
+              <span class="badge badge-primary" *ngFor="let tag of job.tags">{{ tag }}</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hidden Group Toggle (Expand) -->
+        <div class="timeline-item hidden-expander" *ngIf="i === 2 && !showHiddenExperience"
+          (click)="showHiddenExperience = true">
+          <div class="timeline-marker is-faded"></div>
+          <div class="timeline-content faded-text">
+            (Masters education + part time experience)
+          </div>
+        </div>
+
+        <!-- Hidden Group Toggle (Collapse) -->
+        <div class="timeline-item hidden-expander" *ngIf="i === 4 && showHiddenExperience"
+          (click)="showHiddenExperience = false">
+          <div class="timeline-marker is-faded"></div>
+          <div class="timeline-content faded-text">
+            (Collapse)
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="resume-section" id="skills">
+  <div class="resume-section-content">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-category" *ngFor="let cat of skills">
+        <h4 class="skill-category-title">{{ cat.category }}</h4>
+        <div class="skill-tags">
+          <span class="skill-tag" *ngFor="let skill of cat.tags">{{ skill }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Education & Publications -->
+<section class="resume-section" id="publications">
+  <div class="resume-section-content">
+    <h2 class="section-title">Education & Publications</h2>
+
+    <div class="edu-grid">
+      <article class="edu-card" *ngFor="let edu of education">
+        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div>
+          <h3 class="edu-degree">{{ edu.degree }}</h3>
+          <div class="edu-school">{{ edu.school }}</div>
+          <div class="edu-date">{{ edu.date }}</div>
+        </div>
+      </article>
+    </div>
+
+    <h3 class="subsection-title">Research Publications</h3>
+    <div class="pub-list">
+      <article class="pub-item" *ngFor="let pub of publications">
+        <div class="pub-icon"><i class="fas fa-file-alt"></i></div>
+        <div>
+          <h4 class="pub-title">{{ pub.title }}</h4>
+          <div class="pub-venue">{{ pub.venue }}</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <app-blogs-section></app-blogs-section>
 <app-projects-section></app-projects-section>
 <app-hacks-section></app-hacks-section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-main">
+      <h3 class="footer-name">Akram Ansari</h3>
+      <p class="footer-tagline">Senior Software Engineer at Confluent</p>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:mdakram28@gmail.com" class="footer-link">
+        <i class="fas fa-envelope"></i> mdakram28&#64;gmail.com
+      </a>
+      <a href="https://www.linkedin.com/in/mdakram28/" target="_blank" rel="noopener" class="footer-link">
+        <i class="fab fa-linkedin-in"></i> LinkedIn
+      </a>
+      <a href="https://github.com/mdakram28/" target="_blank" rel="noopener" class="footer-link">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Akram Ansari</span>
+  </div>
+</footer>

@@ -1,17 +1,13 @@
-import { AfterViewInit, Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { Meta, Title } from "@angular/platform-browser";
-
-declare const $;
 
 @Component({
   selector: "app-home",
   templateUrl: "./home.component.html",
   styleUrls: ["./home.component.scss"],
 })
-export class HomeComponent implements AfterViewInit {
+export class HomeComponent {
   title = "portfolio";
-  lines = "";
-  startWebsiteTimeout = null;
 
   counts = {
     awards: 12,
@@ -19,134 +15,116 @@ export class HomeComponent implements AfterViewInit {
     projects: 42,
   };
 
+  experience = [
+    {
+      role: "Senior Software Engineer",
+      company: "Confluent",
+      location: "Remote, Canada",
+      date: "Dec 2024 — Present",
+      description: "Developing enterprise Kafka for Confluent cloud. Working on high-throughput low-latency distributed storage for kafka.",
+      tags: ["Kafka", "Distributed Systems", "Java", "Storage"],
+    },
+    {
+      role: "Software Engineer",
+      company: "Huawei",
+      location: "Toronto, Canada",
+      date: "Apr 2024 — Dec 2024",
+      description: "Designed high throughput (~ 600 Mbps/node) change data capture in a cloud-native database (GaussDB) in C++. Extended PostgreSQL database to support columnar storage in GaussDB optimized for analytical query processing.",
+      tags: ["C++", "Distributed Database", "PostgreSQL", "CDC"],
+    },
+    {
+      role: "Research Assistant & Teaching Assistant",
+      company: "University of Calgary",
+      location: "Calgary, Canada",
+      date: "Sep 2021 — Apr 2024",
+      description: "Published 3 research papers on video streaming at renowned conferences. Worked with AT&T Labs on HTTP Adaptive Streaming over QUIC.",
+      tags: ["Video Streaming", "QUIC", "Research"],
+    },
+    {
+      role: "Software Engineer",
+      company: "InterDigital",
+      location: "Montreal, Canada",
+      date: "Sep 2023 — Jan 2024",
+      description: "Developed end-to-end VPCC point cloud video (XR) and haptics streaming library over WebRTC in C++. Built MP4 packager for MIHS immersive media.",
+      tags: ["C++", "WebRTC", "XR"],
+    },
+    {
+      role: "Google Summer of Code, VideoLAN (VLC)",
+      company: "VideoLAN",
+      location: "Remote",
+      date: "May 2023 — Aug 2023",
+      description: "Implemented 20 different playlist format parsers and VLC core modules in Rust with C++ interoperability.",
+      tags: ["Rust", "VLC", "C++", "Open Source"],
+    },
+    {
+      role: "Software Engineer",
+      company: "Schlumberger",
+      location: "Pune, India",
+      date: "Jun 2019 — Aug 2021",
+      description: "Led the development of ProSource, a kubernetes based Oil & Gas data processing system using C++, Java (Spring), Angular, PostgreSQL. Developed 99.8% available data ingestion services in Python (Flask) and Java on GCP and Azure.",
+      tags: ["Python", "Java", "Kubernetes", "GCP", "Azure"],
+    },
+  ];
+
+  showHiddenExperience = false;
+
+  skills = [
+    {
+      category: "Languages",
+      tags: ["C++", "Rust", "Java", "Python"]
+    },
+    {
+      category: "Database Internals",
+      tags: ["Distributed Storage", "Kafka", "LSM Trees", "Columnar Storage", "CDC"]
+    },
+    {
+      category: "Systems & Networking",
+      tags: ["Multithreading", "Linux Kernel", "TCP/IP", "QUIC / HTTP/3", "Memory Management"]
+    }
+  ];
+
+  education = [
+    {
+      degree: "Master of Science — Computer Science",
+      school: "University of Calgary, Canada",
+      date: "2021 — 2023",
+    },
+    {
+      degree: "Bachelor of Technology — Information Technology",
+      school: "Vellore Institute of Technology, India",
+      date: "2015 — 2019",
+    },
+  ];
+
+  publications = [
+    {
+      title: "TASQ: Temporal Adaptive Streaming over QUIC",
+      venue: "Research with AT&T Labs — HTTP Adaptive Streaming leveraging AV1 GOP structure and QUIC transport",
+    },
+    {
+      title: "IStream Player — A Novel Streaming Video Player and Framework",
+      venue: "Supports 360° video, live streaming, DASH, HLS, QUIC (HTTP/3), TCP, and detailed statistics",
+    },
+    {
+      title: "Bheem OS — A Next-Generation Reasonably Secure OS Using Rust MicroVMs",
+      venue: "Published research on secure operating system design using Rust-based micro virtual machines",
+    },
+  ];
+
+  toggleExperience(job: any) {
+    job.collapsed = !job.collapsed;
+  }
+
   constructor(private titleService: Title, private meta: Meta) {
-    this.startWebsite = this.startWebsite.bind(this);
-    console.log("window.location.pathname.toLowerCase()", window.location.pathname.toLowerCase());
     if (window.location.pathname.toLowerCase().startsWith("/av1-parser-gui")) {
-        window.location.pathname = "media-parser-gui";
+      window.location.pathname = "media-parser-gui";
     }
-  }
-
-  startWebsite() {
-    clearTimeout(this.startWebsiteTimeout);
-    $(document).off("click", this.startWebsite);
-    $(document).off("keypress", this.startWebsite);
-
-    // $("body").addClass("slide-in-bottom");
-    $(".console").fadeOut();
-    setTimeout(() => {
-      $("body").removeClass("hidden");
-      // $("body").removeClass("slide-in-bottom");
-    }, 500);
-  }
-
-  shouldShowTerminal(): boolean {
-    return false;
-    try {
-      const v = localStorage.getItem("firstVisited");
-      if (!v) return true;
-      const timeDiff = new Date().getTime() - new Date(v).getTime();
-      if (timeDiff > 60 * 60 * 1000) return true;
-    } catch (err) {}
-
-    return false;
-  }
-
-  ngAfterViewInit(): void {
-    if (this.shouldShowTerminal()) {
-      setTimeout(() => {
-        this.startConsole(() => {
-          localStorage.setItem("firstVisited", new Date().toString());
-          $(document).on("keypress", this.startWebsite);
-          $(document).on("click", this.startWebsite);
-          this.startWebsiteTimeout = setTimeout(this.startWebsite, 10000);
-          console.log("Attached");
-        });
-      }, 1000);
-    } else {
-      $(".console").hide();
-      $("body").toggleClass("hidden");
-    }
-
-    setInterval(() => {
-      document
-        .getElementById("scroll-icon")
-        .classList.toggle("animate__fadeInDown");
-    }, 5000);
-
-    // this.titleService.setTitle("");
-    // this.meta.updateTag({ name: "og:title", content: this.blog.title });
-    // this.meta.updateTag({
-    //   name: "og:description",
-    //   content: this.blog.description,
-    // });
-    // this.meta.updateTag({
-    //   name: "og:image",
-    //   content: this.blog.image,
-    // });
-    // this.meta.updateTag({
-    //   name: "og:type",
-    //   content: "port",
-    // });
-  }
-
-  startConsole(doneCallback) {
-    let content = `^d050python portfolio.py
-^w1000^d010
-Welcome to Akram's Portfolio
-
-AKRAM ANSARI
-------------
-Full Stack Developer | Blockchain Developer
-^w1000
-^d050"Talk is cheap. Show me the code."
-- Linus Torvalds
-^w1000
-
-^d010`;
-
-    if (this.isTouchDevice()) {
-      content += "Touch anywhere on screen to continue ...";
-    } else {
-      content += "Press any key to continue ...";
-    }
-
-    let delay = 100;
-    let cursor = 0;
-
-    const printerFunc = () => {
-      if (cursor >= content.length) return doneCallback();
-      const c = content.charAt(cursor);
-      if (c == "^") {
-        const type = content.charAt(cursor + 1);
-        switch (type) {
-          case "d":
-            delay = parseInt(content.substr(cursor + 2, cursor + 5));
-            cursor = cursor + 5;
-            setTimeout(printerFunc, delay);
-            break;
-          case "w":
-            const wait = parseInt(content.substr(cursor + 2, cursor + 6));
-            cursor = cursor + 6;
-            setTimeout(printerFunc, wait);
-            break;
-        }
-      } else {
-        this.lines += c;
-        cursor += 1;
-        setTimeout(printerFunc, delay);
-      }
-    };
-
-    $(".console").show();
-    printerFunc();
-  }
-
-  isTouchDevice() {
-    return "ontouchstart" in document.documentElement;
   }
 
   goto(id: string) {
-    window.location.href = "#" + id;
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
   }
 }

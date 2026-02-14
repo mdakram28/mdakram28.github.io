@@ -1,56 +1,30 @@
 <section class="resume-section" id="blog">
   <div class="resume-section-content">
-    <h2 class="mb-5">Blog Posts</h2>
+    <h2 class="section-title">Blog Posts</h2>
 
-    <div
-      class="blogpost d-flex flex-column flex-md-row mb-5"
-      *ngFor="let post of blogPosts"
-    >
-      <a
-        href="{{ '/blog/' + post.slug }}"
-        class="flex-shrink-0"
-        [style.backgroundColor]="post.cover || ''"
-      >
-        <div
-          [style.backgroundImage]="'url(\'' + post.cover + '\')'"
-          [style.backgroundSize]="'cover'"
-          class="thumbnail contain"
-        ></div>
-      </a>
-      <div class="flex-grow-1 description">
-        <a href="{{ '/blog/' + post.slug }}">
-          <h3 class="heading mb-0">
-            {{ post.title }}
-          </h3>
-          
-          <div class="subheading">
-            {{ post.updatedAt }}
-          </div>
-          
-          <div class="tags">
-            <span class="tag" *ngFor="let tag of post.tags">
-              <span class="badge badge-primary">{{ tag }}</span>
-            </span>
-          </div>
-          
-          <p>{{ post.description }}</p>
+    <div class="card-list">
+      <div class="content-card d-flex flex-column flex-md-row" *ngFor="let post of blogPosts">
+        <a href="{{ '/blog/' + post.slug }}" class="card-thumbnail-wrapper">
+          <div [style.backgroundImage]="'url(\'' + post.cover + '\')'" class="card-thumbnail"></div>
         </a>
-
-        <a href="{{ '/blog/' + post.slug }}" class="button">Read More</a>
-
-        <div class="social-links" style="float: right">
-          <a
-            class="button"
-            [href]="link.url"
-            target="blank"
-            *ngFor="let link of post.links"
-          >
-            <i *ngIf="link.type == 'github'" class="fab fa-github"></i>
-            <span *ngIf="link.type == 'github'">&nbsp;Github Repo</span>
+        <div class="card-body-content">
+          <a href="{{ '/blog/' + post.slug }}" class="card-link">
+            <h3 class="card-title">{{ post.title }}</h3>
+            <div class="card-date">{{ post.updatedAt }}</div>
+            <div class="card-tags">
+              <span class="badge badge-primary" *ngFor="let tag of post.tags">{{ tag }}</span>
+            </div>
+            <p class="card-description">{{ post.description }}</p>
           </a>
+          <div class="card-actions">
+            <a href="{{ '/blog/' + post.slug }}" class="btn-outline">Read More</a>
+            <a class="btn-outline" [href]="link.url" target="_blank" *ngFor="let link of post.links">
+              <i *ngIf="link.type == 'github'" class="fab fa-github"></i>
+              <span *ngIf="link.type == 'github'">&nbsp;Code</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<hr class="m-0" />

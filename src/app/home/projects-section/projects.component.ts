@@ -1,10 +1,11 @@
 import { Component, OnInit, TemplateRef, ViewChild } from "@angular/core";
-import { ProjectDevbox } from "./projects/devbox";
-import { ProjectOpenart } from "./projects/openart";
-import { ProjectPtcloud } from "./projects/ptcloud";
-import { ProjectCodeboard } from "./projects/codeboard";
-import { ProjectAgroshare } from "./projects/agroshare";
-import { ProjectJ3d } from "./projects/j3d";
+import {
+  ProjectOpenVMM,
+  ProjectRoverX,
+  ProjectSyncLib,
+  ProjectVideoLab,
+  ProjectMediaParsers,
+} from "./projects/resume-projects";
 import { BsModalRef, BsModalService } from "ngx-bootstrap/modal";
 import { Project } from "./project.model";
 import { GalleryItem, ImageItem } from "ng-gallery";
@@ -16,12 +17,11 @@ import { GalleryItem, ImageItem } from "ng-gallery";
 })
 export class ProjectsComponent implements OnInit {
   projects = [
-    ProjectJ3d,
-    ProjectAgroshare,
-    ProjectCodeboard,
-    ProjectPtcloud,
-    ProjectDevbox,
-    ProjectOpenart,
+    ProjectOpenVMM,
+    ProjectRoverX,
+    ProjectSyncLib,
+    ProjectVideoLab,
+    ProjectMediaParsers,
   ];
 
   viewType = "grid";
@@ -32,9 +32,9 @@ export class ProjectsComponent implements OnInit {
   public project: Project;
   images: GalleryItem[];
 
-  constructor(private modalService: BsModalService) {}
+  constructor(private modalService: BsModalService) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   openProjectModal(project) {
     this.project = project;

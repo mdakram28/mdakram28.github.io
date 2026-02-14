@@ -1,22 +1,27 @@
 <section class="resume-section" id="hacks">
   <div class="resume-section-content">
-    <div class="header">
-      <h2 class="mb-5">Hackathons</h2>
-    </div>
+    <h2 class="section-title">Hackathons</h2>
 
-    <div class="hacks-list">
-      <div class="card" *ngFor="let hack of collapsed ? (hacks | slice: 0:6) : hacks" [style.backgroundColor]="hack.thumbColor" (click)="openHack(hack)" [id]="hack.title">
-        <span *ngIf="hack.winner" class="ribbon"><i class="fas fa-trophy winner"></i></span>
-        <div class="thumb" [style.backgroundImage]="'url(' + hack.thumb + ')'" [style.backgroundSize]="hack.thumbSize"></div>
-        <div class="content">
-          <span class="title">{{ hack.title }}</span>
-          <span class="year">{{ hack.year }}</span>
+    <div class="hacks-grid">
+      <div class="hack-card" *ngFor="let hack of collapsed ? (hacks | slice: 0:6) : hacks"
+        [style.backgroundColor]="hack.thumbColor" (click)="openHack(hack)" [id]="hack.title">
+        <span *ngIf="hack.winner" class="trophy-badge">
+          <i class="fas fa-trophy"></i>
+        </span>
+        <div class="hack-thumb" [style.backgroundImage]="'url(' + hack.thumb + ')'"
+          [style.backgroundSize]="hack.thumbSize"></div>
+        <div class="hack-info">
+          <span class="hack-title">{{ hack.title }}</span>
+          <span class="hack-year">{{ hack.year }}</span>
         </div>
       </div>
     </div>
 
-    <span href="#" *ngIf="collapsed" (click)="toggleCollapsed()" class="button" id="collapse"> <i class="fa fa-plus"></i>&nbsp;View More </span>
-    <span href="#" *ngIf="!collapsed" (click)="toggleCollapsed()" class="button" id="collapse"> <i class="fa fa-minus"></i>&nbsp;View Less </span>
+    <button *ngIf="collapsed" (click)="toggleCollapsed()" class="btn-outline toggle-btn">
+      <i class="fa fa-plus"></i>&nbsp;View More
+    </button>
+    <button *ngIf="!collapsed" (click)="toggleCollapsed()" class="btn-outline toggle-btn">
+      <i class="fa fa-minus"></i>&nbsp;View Less
+    </button>
   </div>
 </section>
-<hr class="m-0" />

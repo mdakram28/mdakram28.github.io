@@ -6,11 +6,14 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./nav.component.scss"],
 })
 export class NavComponent implements OnInit {
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   goto(id: string) {
-    window.location.href = "#" + id;
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
   }
 }
