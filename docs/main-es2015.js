@@ -947,11 +947,11 @@ class HomeComponent {
         this.skills = [
             {
                 category: "Languages",
-                tags: ["C++", "Rust", "Java", "Python"]
+                tags: ["C++", "Java", "Python", "Rust"]
             },
             {
                 category: "Database Internals",
-                tags: ["Distributed Storage", "Kafka", "LSM Trees", "Columnar Storage", "CDC"]
+                tags: ["Distributed Storage", "Kafka", "Database Internals", "LSM Trees", "Columnar Storage", "CDC"]
             },
             {
                 category: "Systems & Networking",
@@ -979,27 +979,27 @@ class HomeComponent {
             {
                 title: "TASQ: Temporal Adaptive Streaming over QUIC",
                 venue: "ACM MMSys/NOSSDAV (2023) — Research with AT&T Labs on leveraging AV1 GOP structure for adaptive streaming.",
-                url: "https://dl.acm.org/doi/10.1145/3593856.3595914",
+                url: "https://dl.acm.org/doi/10.1145/3587819.3590991",
             },
             {
                 title: "IStream Player: A Versatile Video Player Framework",
                 venue: "ACM NOSSDAV (2023) — A plugin-based player supporting 360° video, DASH, HLS, and QUIC TRANSPORT.",
-                url: "https://dl.acm.org/doi/10.1145/3593856.3592823",
+                url: "https://dl.acm.org/doi/10.1145/3592473.3592569",
             },
             {
                 title: "iStream: A Flexible Container-Based Testbed for Multimedia Streaming",
                 venue: "ACM MMSys (2023) — A Docker-based testbed for reproducible multimedia streaming experiments.",
-                url: "https://dl.acm.org/doi/10.1145/3583960.3589196",
+                url: "https://ieeexplore.ieee.org/document/10254429",
             },
             {
                 title: "CRACS: Cross-Cloud Access Control Service for Multi-Cloud SaaS Applications",
                 venue: "IEEE Cloud (2023) — Research on security and access control in multi-cloud environments.",
-                url: "https://ieeexplore.ieee.org/document/10254921",
+                url: "https://www.researchgate.net/publication/370690474_CRACS_Cross-Cloud_Access_Control_Service_for_Multi-Cloud_SaaS_Applications",
             },
             {
                 title: "Bheem OS: Reasonably Secure OS Using Rust MicroVMs",
                 venue: "Presented at NullCon Berlin (2022) — Secure operating system design using Rust-based micro virtual machines and OpenVMM.",
-                url: "https://nullcon.net/berlin-2022/speakers/akram-ansari/",
+                url: "https://archive.nullcon.net/website/berlin-2022/speakers/bheem-OS.php",
             },
         ];
         if (window.location.pathname.toLowerCase().startsWith("/av1-parser-gui")) {
