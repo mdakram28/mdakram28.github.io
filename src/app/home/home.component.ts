@@ -21,7 +21,7 @@ export class HomeComponent {
       company: "Confluent",
       location: "Remote, Canada",
       date: "Dec 2024 — Present",
-      description: "Developing enterprise Kafka for Confluent cloud. Working on high-throughput low-latency distributed storage for kafka.",
+      description: "Building enterprise Kafka capabilities in Confluent Cloud with a focus on high-throughput, low-latency distributed storage paths and production reliability.",
       tags: ["Kafka", "Distributed Systems", "Java", "Storage"],
     },
     {
@@ -29,7 +29,7 @@ export class HomeComponent {
       company: "Huawei",
       location: "Toronto, Canada",
       date: "Apr 2024 — Dec 2024",
-      description: "Designed high throughput (~ 600 Mbps/node) change data capture in a cloud-native database (GaussDB) in C++. Extended PostgreSQL database to support columnar storage in GaussDB optimized for analytical query processing.",
+      description: "Designed high-throughput (~600 Mbps/node) CDC for cloud-native GaussDB in C++. Extended PostgreSQL internals for columnar storage optimized for analytical query execution.",
       tags: ["C++", "Distributed Database", "PostgreSQL", "CDC"],
     },
     {

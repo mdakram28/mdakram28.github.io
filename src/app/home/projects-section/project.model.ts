@@ -15,7 +15,7 @@ export interface Project {
   readmeSrc: String;
 
   links: {
-    type: "github" | "youtube" | "other";
+    type: "github" | "youtube" | "website" | "other";
     url: String;
   }[];
 }

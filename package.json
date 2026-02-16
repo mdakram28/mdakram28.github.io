@@ -31,12 +31,17 @@
     "ng-gallery": "^5.0.0",
     "ngx-bootstrap": "^6.2.0",
     "ngx-markdown": "^10.1.1",
-    "puppeteer": "^24.37.3",
-    "puppeteer-core": "~2.1.1",
+    "puppeteer": "19.0.0",
+    "puppeteer-core": "19.0.0",
     "rxjs": "~6.5.4",
     "scully-plugin-disable-angular": "^8.0.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
+  },
+  "resolutions": {
+    "puppeteer": "19.0.0",
+    "puppeteer-core": "19.0.0",
+    "@types/node": "16.11.7"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.7",
@@ -57,6 +62,6 @@
     "protractor": "~5.4.3",
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
-    "typescript": "~3.7.5"
+    "typescript": "^5.9.3"
   }
 }

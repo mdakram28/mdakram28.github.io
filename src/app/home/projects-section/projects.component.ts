@@ -5,6 +5,7 @@ import {
   ProjectSyncLib,
   ProjectVideoLab,
   ProjectMediaParsers,
+  ProjectThorstream,
 } from "./projects/resume-projects";
 import { BsModalRef, BsModalService } from "ngx-bootstrap/modal";
 import { Project } from "./project.model";
@@ -22,6 +23,7 @@ export class ProjectsComponent implements OnInit {
     ProjectSyncLib,
     ProjectVideoLab,
     ProjectMediaParsers,
+    ProjectThorstream,
   ];
 
   viewType = "grid";
@@ -38,7 +40,7 @@ export class ProjectsComponent implements OnInit {
 
   openProjectModal(project) {
     this.project = project;
-    this.images = project.gallery.map((src) => new ImageItem({ src, thumb: src }));
+    this.images = (project.gallery || []).map((src) => new ImageItem({ src, thumb: src }));
     setTimeout(() => {
       this.modalRef = this.modalService.show(this.modelTemplate, {
         class: "modal-custom-lg",

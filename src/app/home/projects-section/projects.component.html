@@ -20,9 +20,11 @@
           <p class="card-description">{{ proj.description }}</p>
           <div class="card-actions">
             <span class="btn-outline" (click)="openProjectModal(proj)">Gallery · More</span>
-            <a class="btn-outline" [href]="link.url" target="_blank" *ngFor="let link of proj.links">
+            <a class="btn-outline" [href]="link.url" target="_blank" rel="noopener" *ngFor="let link of proj.links">
               <i *ngIf="link.type == 'github'" class="fab fa-github"></i>
-              <span *ngIf="link.type == 'github'">&nbsp;Code</span>
+              <i *ngIf="link.type == 'website'" class="fas fa-external-link-alt"></i>
+              <span *ngIf="link.type == 'github'">Code</span>
+              <span *ngIf="link.type == 'website'">Live Site</span>
             </a>
           </div>
         </div>
@@ -44,7 +46,8 @@
       <span class="badge badge-primary" *ngFor="let tag of project.tags">{{ tag }}</span>
     </div>
     <p class="card-description" style="margin-top: 1rem">{{ project.description }}</p>
-    <gallery thumbPosition="left" [items]="images" [thumb]="false" [dots]="true" [counter]="false"></gallery>
-    <markdown [src]="project.readmeSrc" class="markdown"></markdown>
+    <gallery *ngIf="images?.length" thumbPosition="left" [items]="images" [thumb]="false" [dots]="true"
+      [counter]="false"></gallery>
+    <markdown *ngIf="project.readmeSrc" [src]="project.readmeSrc" class="markdown"></markdown>
   </div>
 </ng-template>

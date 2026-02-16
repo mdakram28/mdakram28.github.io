@@ -1,59 +1,62 @@
 import { Project } from "../project.model";
 
 export const ProjectOpenVMM: Project = {
-    title: "OpenVMM",
-    subtitle: "Cloud-native VMM in Rust",
+    title: "Thorstream",
+    subtitle: "Distributed Streaming Broker in Rust",
     thumbnail: "/assets/projects/resume/openvmm.png",
     thumbnail_size: "cover",
-    thumbnail_bg: "#d45d35", // Rust color
+    thumbnail_bg: "#1f3558",
     description:
-        "A cloud-native Virtual Machine Monitor (VMM) written in Rust. Features a modular architecture for managing virtualized resources and ensures memory safety and high performance.",
-    tags: ["Rust", "Virtualization", "Cloud-Native", "Systems"],
+        "Built a Kafka-compatible streaming broker with append-only segmented storage, consumer groups, partitioned logs, replication, leader election, and operational metrics. Includes compatibility APIs plus a React operations dashboard.",
+    tags: ["Rust", "Distributed Systems", "Kafka", "Replication", "Storage"],
     gallery: [],
-    readmeSrc: "",
-    links: [],
+    readmeSrc: "https://raw.githubusercontent.com/mdakram28/thorstream/main/README.md",
+    links: [
+        { type: "github", url: "https://github.com/mdakram28/thorstream" },
+        { type: "website", url: "https://mdakram.com/thorstream/" },
+    ],
 };
 
 export const ProjectRoverX: Project = {
-    title: "RoverX",
-    subtitle: "Mars Rover Simulation",
-    thumbnail: "/assets/projects/resume/roverx.png",
+    title: "CodeBoard",
+    subtitle: "Online Judge & Contest Platform",
+    thumbnail: "/assets/img/proj_codeboard_1.png",
     thumbnail_size: "cover",
-    thumbnail_bg: "#ff5722", // Mars orange
+    thumbnail_bg: "#2a2f45",
     description:
-        "A comprehensive simulation of a Mars rover mission. Implemented various subsystems including navigation, communication, and scientific instrumentation control.",
-    tags: ["C++", "Simulation", "Robotics", "Systems"],
+        "Developed a multi-language coding contest platform with challenge lifecycle management, sandboxed code execution queue, realtime test-case feedback via sockets, and submission scoring/leaderboard workflows.",
+    tags: ["Node.js", "Express", "MongoDB", "Realtime", "Execution Engine"],
     gallery: [],
     readmeSrc: "",
-    links: [],
+    links: [{ type: "github", url: "https://github.com/mdakram28/codeboard" }],
 };
 
 export const ProjectSyncLib: Project = {
-    title: "SyncLib",
-    subtitle: "C++ Synchronization Library",
-    thumbnail: "/assets/projects/resume/synclib.png",
+    title: "DAgro",
+    subtitle: "Blockchain-Powered Agriculture Marketplace",
+    thumbnail: "/assets/img/proj_agroshare_1.jpg",
     thumbnail_size: "cover",
-    thumbnail_bg: "#00599c", // C++ blue
+    thumbnail_bg: "#2d5034",
     description:
-        "A high-performance C++ library providing advanced synchronization primitives. Designed to facilitate efficient multithreaded programming with minimal overhead.",
-    tags: ["C++", "Multithreading", "Library", "Concurrency"],
+        "Implemented smart-contract-backed community economics for farming workflows: member shares, deposits, valuation, and task assignment/verification on Ethereum with a Web3 + Truffle DApp frontend.",
+    tags: ["Solidity", "Ethereum", "Web3", "Truffle", "Smart Contracts"],
     gallery: [],
-    readmeSrc: "",
-    links: [],
+    readmeSrc: "https://raw.githubusercontent.com/mdakram28/dagro/main/README.md",
+    links: [{ type: "github", url: "https://github.com/mdakram28/dagro" }],
 };
 
 export const ProjectVideoLab: Project = {
-    title: "Video Lab",
-    subtitle: "Automated Video Analysis",
-    thumbnail: "/assets/projects/resume/videolab.png",
+    title: "J3D Engine",
+    subtitle: "Software 3D Rendering Engine in Java",
+    thumbnail: "/assets/img/proj_j3d_1.jpg",
     thumbnail_size: "cover",
-    thumbnail_bg: "#f44336", // Red for video
+    thumbnail_bg: "#ededed",
     description:
-        "An automated video analysis tool for evaluating streaming quality. capable of processing large datasets of video files to extract metrics like bitrate, resolution, and encoding efficiency.",
-    tags: ["Python", "Video Processing", "Automation", "FFmpeg"],
+        "Built a modular Java 3D renderer from scratch using custom geometric primitives, projection math, plane sorting, clipping/intersection logic, and interactive camera movement controls.",
+    tags: ["Java", "Rendering", "Linear Algebra", "Engine Design"],
     gallery: [],
-    readmeSrc: "",
-    links: [],
+    readmeSrc: "https://raw.githubusercontent.com/mdakram28/j3d/main/readme.md",
+    links: [{ type: "github", url: "https://github.com/mdakram28/j3d" }],
 };
 
 export const ProjectMediaParsers: Project = {
@@ -63,9 +66,26 @@ export const ProjectMediaParsers: Project = {
     thumbnail_size: "cover",
     thumbnail_bg: "#4caf50", // Green
     description:
-        "A web-based graphical user interface for parsing and analyzing various media container formats. Provides structural visualization of ISO BMFF (MP4) and other formats.",
-    tags: ["TypeScript", "Angular", "Web Assembly", "Media"],
+        "Built an in-browser AV1/HEVC/MP4/IVF bitstream explorer with container auto-detection, syntax tree visualization, raw hex inspection, and track extraction/download workflows.",
+    tags: ["TypeScript", "React", "Bitstream Parsing", "AV1", "HEVC"],
     gallery: [],
-    readmeSrc: "",
-    links: [],
+    readmeSrc: "https://raw.githubusercontent.com/mdakram28/media-parser-gui/main/README.md",
+    links: [
+        { type: "github", url: "https://github.com/mdakram28/media-parser-gui" },
+        { type: "website", url: "https://mdakram.com/media-parser-gui/" },
+    ],
+};
+
+export const ProjectThorstream: Project = {
+    title: "OpenArt",
+    subtitle: "Content Provenance on Blockchain + IPFS",
+    thumbnail: "/assets/projects/resume/videolab.png",
+    thumbnail_size: "cover",
+    thumbnail_bg: "#7b4397",
+    description:
+        "Designed a decentralized media-sharing prototype that stores content on IPFS and records ownership/payment metadata on Ethereum smart contracts to improve provenance and misuse resistance.",
+    tags: ["IPFS", "Ethereum", "Web3.js", "DApp", "Content Security"],
+    gallery: [],
+    readmeSrc: "https://raw.githubusercontent.com/mdakram28/openart/main/README.md",
+    links: [{ type: "github", url: "https://github.com/mdakram28/openart" }],
 };
