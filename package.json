@@ -4,11 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --stats-json && npm run scully && cpy src/assets/CNAME docs && git add . && git commit -m 'deploy' && git push -f",
+    "deploy": "NODE_OPTIONS=--openssl-legacy-provider ng build --stats-json && npm run scully && cpy src/assets/CNAME docs && git add . && git commit -m 'deploy' && git push -f",
     "scully": "scully",
     "scully:serve": "scully serve"
   },
@@ -62,6 +62,6 @@
     "protractor": "~5.4.3",
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
-    "typescript": "^5.9.3"
+      "typescript": "~3.7.5"
   }
 }

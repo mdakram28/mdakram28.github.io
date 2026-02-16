@@ -18,7 +18,6 @@ export const config: ScullyConfig = {
     }
   },
   puppeteerLaunchOptions: {
-    executablePath: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
     args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
   }
 };
