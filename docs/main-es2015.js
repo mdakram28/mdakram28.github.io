@@ -1160,7 +1160,7 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "p", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, " I build high-throughput, low-latency distributed storage systems. Currently optimizing the core infrastructure of Enterprise Kafka in the cloud. From Rust-based MicroVMs to C++ database internals, I specialize in solving complex problems at the intersection of storage, network and distributed software. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, " I build high-throughput, low-latency distributed storage systems. Currently optimizing the core storage and replication in Enterprise Kafka in the Confluent cloud. From Rust-based MicroVMs to C++ database internals, I specialize in solving complex problems at the intersection of storage, network and distributed software. ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 7);
