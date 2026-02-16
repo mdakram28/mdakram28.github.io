@@ -127,6 +127,11 @@ export class HomeComponent {
       venue: "Presented at NullCon Berlin (2022) — Secure operating system design using Rust-based micro virtual machines and OpenVMM.",
       url: "https://archive.nullcon.net/website/berlin-2022/speakers/bheem-OS.php",
     },
+    {
+      title: "A First Look at Open-GoP Streaming with Av1 S-Frames",
+      venue: "ISM (2025) - International Symposium on Multimedia",
+      url: "https://ieeexplore.ieee.org/abstract/document/11366700"
+    }
   ];
 
   toggleExperience(job: any) {

@@ -3,3 +3,5 @@ Using deprecated plugin type:"render"  use "postProcessByHtml" instead
 Could not fetch data for route "/blog/:id"
 Using deprecated plugin type:"render"  use "postProcessByHtml" instead
 Could not fetch data for route "/blog/:id"
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Could not fetch data for route "/blog/:id"
