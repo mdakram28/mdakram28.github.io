@@ -1,9 +1,9 @@
 import { Project } from "../project.model";
 
-export const ProjectOpenVMM: Project = {
+export const ProjectThorstream: Project = {
     title: "Thorstream",
     subtitle: "Distributed Streaming Broker in Rust",
-    thumbnail: "/assets/projects/resume/openvmm.png",
+    thumbnail: "/assets/projects/resume/thorstream.png",
     thumbnail_size: "cover",
     thumbnail_bg: "#1f3558",
     description:
@@ -17,7 +17,7 @@ export const ProjectOpenVMM: Project = {
     ],
 };
 
-export const ProjectRoverX: Project = {
+export const ProjectCodeBoard: Project = {
     title: "CodeBoard",
     subtitle: "Online Judge & Contest Platform",
     thumbnail: "/assets/img/proj_codeboard_1.png",
@@ -31,7 +31,7 @@ export const ProjectRoverX: Project = {
     links: [{ type: "github", url: "https://github.com/mdakram28/codeboard" }],
 };
 
-export const ProjectSyncLib: Project = {
+export const ProjectDAgro: Project = {
     title: "DAgro",
     subtitle: "Blockchain-Powered Agriculture Marketplace",
     thumbnail: "/assets/img/proj_agroshare_1.jpg",
@@ -45,7 +45,7 @@ export const ProjectSyncLib: Project = {
     links: [{ type: "github", url: "https://github.com/mdakram28/dagro" }],
 };
 
-export const ProjectVideoLab: Project = {
+export const ProjectJ3DEngine: Project = {
     title: "J3D Engine",
     subtitle: "Software 3D Rendering Engine in Java",
     thumbnail: "/assets/img/proj_j3d_1.jpg",
@@ -62,7 +62,7 @@ export const ProjectVideoLab: Project = {
 export const ProjectMediaParsers: Project = {
     title: "Media Parsers GUI",
     subtitle: "Web-based Media Analyzer",
-    thumbnail: "/assets/projects/resume/mediaparsers.png",
+    thumbnail: "/assets/projects/resume/mediaparser.png",
     thumbnail_size: "cover",
     thumbnail_bg: "#4caf50", // Green
     description:
@@ -76,12 +76,12 @@ export const ProjectMediaParsers: Project = {
     ],
 };
 
-export const ProjectThorstream: Project = {
+export const ProjectOpenArt: Project = {
     title: "OpenArt",
     subtitle: "Content Provenance on Blockchain + IPFS",
-    thumbnail: "/assets/projects/resume/videolab.png",
-    thumbnail_size: "cover",
-    thumbnail_bg: "#7b4397",
+    thumbnail: "/assets/projects/resume/openart.png",
+    thumbnail_size: "contain",
+    thumbnail_bg: "#ffffff",
     description:
         "Built a decentralized media-sharing prototype where files are uploaded to IPFS and ownership/payment state is tracked through Ethereum smart contracts for provenance and anti-plagiarism workflows.",
     tags: ["IPFS", "Ethereum", "Web3.js", "Smart Contracts", "DApp"],

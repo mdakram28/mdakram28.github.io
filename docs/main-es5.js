@@ -1002,9 +1002,9 @@ function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Can
     var _projects_section_projects_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./projects-section/projects.component */"./src/app/home/projects-section/projects.component.ts");
     /* harmony import */
     var _hacks_section_hacks_section_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./hacks-section/hacks-section.component */"./src/app/home/hacks-section/hacks-section.component.ts");
-    function HomeComponent_ng_container_55_article_1_span_10_Template(rf, ctx) {
+    function HomeComponent_ng_container_60_article_1_span_10_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 67);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 70);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
@@ -1014,9 +1014,9 @@ function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Can
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" \xB7 ", job_r38.location, "");
       }
     }
-    function HomeComponent_ng_container_55_article_1_div_15_span_1_Template(rf, ctx) {
+    function HomeComponent_ng_container_60_article_1_div_15_span_1_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 70);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 73);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
@@ -1026,10 +1026,10 @@ function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Can
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](tag_r47);
       }
     }
-    function HomeComponent_ng_container_55_article_1_div_15_Template(rf, ctx) {
+    function HomeComponent_ng_container_60_article_1_div_15_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 68);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, HomeComponent_ng_container_55_article_1_div_15_span_1_Template, 2, 1, "span", 69);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 71);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, HomeComponent_ng_container_60_article_1_div_15_span_1_Template, 2, 1, "span", 72);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
       if (rf & 2) {
@@ -1038,31 +1038,31 @@ function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Can
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", job_r38.tags);
       }
     }
-    function HomeComponent_ng_container_55_article_1_Template(rf, ctx) {
+    function HomeComponent_ng_container_60_article_1_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article", 57);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "div", 58);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 59);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 60);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article", 60);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "div", 61);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 62);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 63);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "h3", 61);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "h3", 64);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 62);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 65);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "span");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](10, HomeComponent_ng_container_55_article_1_span_10_Template, 2, 1, "span", 63);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](10, HomeComponent_ng_container_60_article_1_span_10_Template, 2, 1, "span", 66);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "span", 64);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "span", 67);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "p", 65);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "p", 68);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](15, HomeComponent_ng_container_55_article_1_div_15_Template, 2, 1, "div", 66);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](15, HomeComponent_ng_container_60_article_1_div_15_Template, 2, 1, "div", 69);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
@@ -1082,44 +1082,44 @@ function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Can
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", job_r38.tags);
       }
     }
-    function HomeComponent_ng_container_55_div_2_Template(rf, ctx) {
+    function HomeComponent_ng_container_60_div_2_Template(rf, ctx) {
       if (rf & 1) {
         var _r51 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 71);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_ng_container_55_div_2_Template_div_click_0_listener() {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 74);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_ng_container_60_div_2_Template_div_click_0_listener() {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r51);
           var ctx_r50 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
           return ctx_r50.showHiddenExperience = true;
         });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "div", 72);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 73);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "div", 75);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 76);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " (Masters education + part time experience) ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
     }
-    function HomeComponent_ng_container_55_div_3_Template(rf, ctx) {
+    function HomeComponent_ng_container_60_div_3_Template(rf, ctx) {
       if (rf & 1) {
         var _r53 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 71);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_ng_container_55_div_3_Template_div_click_0_listener() {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 74);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_ng_container_60_div_3_Template_div_click_0_listener() {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r53);
           var ctx_r52 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
           return ctx_r52.showHiddenExperience = false;
         });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "div", 72);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 73);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "div", 75);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 76);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " (Collapse) ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
     }
-    function HomeComponent_ng_container_55_Template(rf, ctx) {
+    function HomeComponent_ng_container_60_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, HomeComponent_ng_container_55_article_1_Template, 16, 6, "article", 55);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, HomeComponent_ng_container_55_div_2_Template, 4, 0, "div", 56);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, HomeComponent_ng_container_55_div_3_Template, 4, 0, "div", 56);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, HomeComponent_ng_container_60_article_1_Template, 16, 6, "article", 58);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, HomeComponent_ng_container_60_div_2_Template, 4, 0, "div", 59);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, HomeComponent_ng_container_60_div_3_Template, 4, 0, "div", 59);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
       }
       if (rf & 2) {
@@ -1133,9 +1133,9 @@ function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Can
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", i_r39 === 4 && ctx_r34.showHiddenExperience);
       }
     }
-    function HomeComponent_div_61_span_4_Template(rf, ctx) {
+    function HomeComponent_div_66_span_4_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 78);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 81);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
@@ -1145,14 +1145,14 @@ function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Can
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](skill_r56);
       }
     }
-    function HomeComponent_div_61_Template(rf, ctx) {
+    function HomeComponent_div_66_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 74);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h4", 75);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 77);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h4", 78);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 76);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, HomeComponent_div_61_span_4_Template, 2, 1, "span", 77);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 79);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, HomeComponent_div_66_span_4_Template, 2, 1, "span", 80);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
@@ -1164,20 +1164,20 @@ function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Can
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", cat_r54.tags);
       }
     }
-    function HomeComponent_article_67_Template(rf, ctx) {
+    function HomeComponent_article_72_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article", 79);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 80);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article", 82);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 83);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 24);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "h3", 81);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "h3", 84);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 82);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 85);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 83);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 86);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1193,20 +1193,20 @@ function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Can
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](edu_r57.date);
       }
     }
-    function HomeComponent_article_75_Template(rf, ctx) {
+    function HomeComponent_article_80_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article", 84);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 85);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 86);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article", 87);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 88);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 89);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "h4", 87);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "a", 88);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "h4", 90);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "a", 91);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "i", 41);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "i", 44);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 89);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 92);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1352,9 +1352,9 @@ function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Can
     HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: HomeComponent,
       selectors: [["app-home"]],
-      decls: 102,
+      decls: 107,
       vars: 6,
-      consts: [["id", "about", 1, "hero-section"], [1, "hero-content"], [1, "hero-badge"], [1, "hero-name"], [1, "gradient-text"], [1, "hero-description"], [1, "hero-highlight-list"], [1, "hero-highlight"], [1, "fas", "fa-server"], [1, "fas", "fa-tachometer-alt"], [1, "fas", "fa-cogs"], [1, "hero-stats"], [1, "stat", 3, "click"], [1, "stat-number"], [1, "stat-label"], [1, "social-icons"], ["href", "https://www.linkedin.com/in/mdakram28/", "target", "_blank", "rel", "noopener", "aria-label", "LinkedIn", 1, "social-icon"], [1, "fab", "fa-linkedin-in"], ["href", "https://github.com/mdakram28/", "target", "_blank", "rel", "noopener", "aria-label", "GitHub", 1, "social-icon"], [1, "fab", "fa-github"], ["href", "https://scholar.google.com/citations?user=aFf8olAAAAAJ&hl=en", "target", "_blank", "rel", "noopener", "aria-label", "Google Scholar", 1, "social-icon"], [1, "fas", "fa-graduation-cap"], ["href", "mailto:mdakram28@gmail.com", "aria-label", "Email", 1, "social-icon"], [1, "fas", "fa-envelope"], [1, "scroll-indicator", 3, "click"], [1, "scroll-text"], [1, "scroll-line"], ["id", "experience", 1, "resume-section"], [1, "resume-section-content"], [1, "section-title"], [1, "timeline"], [4, "ngFor", "ngForOf"], ["id", "skills", 1, "resume-section"], [1, "skills-grid"], ["class", "skill-category", 4, "ngFor", "ngForOf"], ["id", "publications", 1, "resume-section"], [1, "edu-grid"], ["class", "edu-card", 4, "ngFor", "ngForOf"], [1, "subsection-title"], [1, "timeline-desc", 2, "margin-top", "-0.5rem", "margin-bottom", "1.25rem"], ["href", "https://scholar.google.com/citations?user=aFf8olAAAAAJ&hl=en", "target", "_blank", "rel", "noopener", 1, "pub-link"], [1, "fas", "fa-external-link-alt", 2, "font-size", "0.8rem", "opacity", "0.6", "margin-left", "4px"], [1, "pub-list"], ["class", "pub-item", 4, "ngFor", "ngForOf"], [1, "site-footer"], [1, "footer-content"], [1, "footer-main"], [1, "footer-name"], [1, "footer-tagline"], [1, "footer-links"], ["href", "mailto:mdakram28@gmail.com", 1, "footer-link"], ["href", "https://www.linkedin.com/in/mdakram28/", "target", "_blank", "rel", "noopener", 1, "footer-link"], ["href", "https://github.com/mdakram28/", "target", "_blank", "rel", "noopener", 1, "footer-link"], ["href", "https://scholar.google.com/citations?user=aFf8olAAAAAJ&hl=en", "target", "_blank", "rel", "noopener", 1, "footer-link"], [1, "footer-bottom"], ["class", "timeline-item", 4, "ngIf"], ["class", "timeline-item hidden-expander", 3, "click", 4, "ngIf"], [1, "timeline-item"], [1, "timeline-marker"], [1, "timeline-content"], [1, "timeline-header"], [1, "timeline-role"], [1, "timeline-company"], ["class", "timeline-location", 4, "ngIf"], [1, "timeline-date"], [1, "timeline-desc"], ["class", "timeline-tags", 4, "ngIf"], [1, "timeline-location"], [1, "timeline-tags"], ["class", "badge badge-primary", 4, "ngFor", "ngForOf"], [1, "badge", "badge-primary"], [1, "timeline-item", "hidden-expander", 3, "click"], [1, "timeline-marker", "is-faded"], [1, "timeline-content", "faded-text"], [1, "skill-category"], [1, "skill-category-title"], [1, "skill-tags"], ["class", "skill-tag", 4, "ngFor", "ngForOf"], [1, "skill-tag"], [1, "edu-card"], [1, "edu-icon"], [1, "edu-degree"], [1, "edu-school"], [1, "edu-date"], [1, "pub-item"], [1, "pub-icon"], [1, "fas", "fa-file-alt"], [1, "pub-title"], ["target", "_blank", "rel", "noopener", 1, "pub-link", 3, "href"], [1, "pub-venue"]],
+      consts: [["id", "about", 1, "hero-section"], [1, "hero-content"], [1, "hero-badge"], [1, "hero-name"], [1, "gradient-text"], [1, "hero-description"], [1, "hero-actions"], ["type", "button", 1, "btn-primary", 3, "click"], ["type", "button", 1, "btn-secondary", 3, "click"], [1, "hero-highlight-list"], [1, "hero-highlight"], [1, "fas", "fa-server"], [1, "fas", "fa-tachometer-alt"], [1, "fas", "fa-cogs"], [1, "hero-stats"], [1, "stat", 3, "click"], [1, "stat-number"], [1, "stat-label"], [1, "social-icons"], ["href", "https://www.linkedin.com/in/mdakram28/", "target", "_blank", "rel", "noopener", "aria-label", "LinkedIn", 1, "social-icon"], [1, "fab", "fa-linkedin-in"], ["href", "https://github.com/mdakram28/", "target", "_blank", "rel", "noopener", "aria-label", "GitHub", 1, "social-icon"], [1, "fab", "fa-github"], ["href", "https://scholar.google.com/citations?user=aFf8olAAAAAJ&hl=en", "target", "_blank", "rel", "noopener", "aria-label", "Google Scholar", 1, "social-icon"], [1, "fas", "fa-graduation-cap"], ["href", "mailto:mdakram28@gmail.com", "aria-label", "Email", 1, "social-icon"], [1, "fas", "fa-envelope"], [1, "scroll-indicator", 3, "click"], [1, "scroll-text"], [1, "scroll-line"], ["id", "experience", 1, "resume-section"], [1, "resume-section-content"], [1, "section-title"], [1, "timeline"], [4, "ngFor", "ngForOf"], ["id", "skills", 1, "resume-section"], [1, "skills-grid"], ["class", "skill-category", 4, "ngFor", "ngForOf"], ["id", "publications", 1, "resume-section"], [1, "edu-grid"], ["class", "edu-card", 4, "ngFor", "ngForOf"], [1, "subsection-title"], [1, "timeline-desc", 2, "margin-top", "-0.5rem", "margin-bottom", "1.25rem"], ["href", "https://scholar.google.com/citations?user=aFf8olAAAAAJ&hl=en", "target", "_blank", "rel", "noopener", 1, "pub-link"], [1, "fas", "fa-external-link-alt", 2, "font-size", "0.8rem", "opacity", "0.6", "margin-left", "4px"], [1, "pub-list"], ["class", "pub-item", 4, "ngFor", "ngForOf"], [1, "site-footer"], [1, "footer-content"], [1, "footer-main"], [1, "footer-name"], [1, "footer-tagline"], [1, "footer-links"], ["href", "mailto:mdakram28@gmail.com", 1, "footer-link"], ["href", "https://www.linkedin.com/in/mdakram28/", "target", "_blank", "rel", "noopener", 1, "footer-link"], ["href", "https://github.com/mdakram28/", "target", "_blank", "rel", "noopener", 1, "footer-link"], ["href", "https://scholar.google.com/citations?user=aFf8olAAAAAJ&hl=en", "target", "_blank", "rel", "noopener", 1, "footer-link"], [1, "footer-bottom"], ["class", "timeline-item", 4, "ngIf"], ["class", "timeline-item hidden-expander", 3, "click", 4, "ngIf"], [1, "timeline-item"], [1, "timeline-marker"], [1, "timeline-content"], [1, "timeline-header"], [1, "timeline-role"], [1, "timeline-company"], ["class", "timeline-location", 4, "ngIf"], [1, "timeline-date"], [1, "timeline-desc"], ["class", "timeline-tags", 4, "ngIf"], [1, "timeline-location"], [1, "timeline-tags"], ["class", "badge badge-primary", 4, "ngFor", "ngForOf"], [1, "badge", "badge-primary"], [1, "timeline-item", "hidden-expander", 3, "click"], [1, "timeline-marker", "is-faded"], [1, "timeline-content", "faded-text"], [1, "skill-category"], [1, "skill-category-title"], [1, "skill-tags"], ["class", "skill-tag", 4, "ngFor", "ngForOf"], [1, "skill-tag"], [1, "edu-card"], [1, "edu-icon"], [1, "edu-degree"], [1, "edu-school"], [1, "edu-date"], [1, "pub-item"], [1, "pub-icon"], [1, "fas", "fa-file-alt"], [1, "pub-title"], ["target", "_blank", "rel", "noopener", 1, "pub-link", 3, "href"], [1, "pub-venue"]],
       template: function HomeComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section", 0);
@@ -1373,162 +1373,176 @@ function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Can
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, " I build high-throughput, low-latency distributed storage systems. Currently optimizing the core storage and replication in Enterprise Kafka in the Confluent cloud. From Rust-based MicroVMs to C++ database internals, I specialize in solving complex problems at the intersection of storage, network and distributed software. ");
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 6);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 7);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "i", 8);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, " Distributed systems and backend platform engineering");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div", 7);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](16, "i", 9);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, " Throughput/latency optimization in production workloads");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "div", 7);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](19, "i", 10);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, " Strong systems fundamentals in C++, Java, Python, and Rust");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "div", 11);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 12);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_Template_div_click_22_listener() {
-            return ctx["goto"]("experience");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "button", 7);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_Template_button_click_12_listener() {
+            return ctx["goto"]("projects");
           });
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "span", 13);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, "6+");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "Explore My Projects");
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "span", 14);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "Years Exp");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "div", 12);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_Template_div_click_27_listener() {
-            return ctx["goto"]("hacks");
-          });
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "span", 13);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "span", 14);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, "Hackathons");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "div", 12);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_Template_div_click_32_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "button", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_Template_button_click_14_listener() {
             return ctx["goto"]("publications");
           });
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "span", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "Read My Research");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "div", 9);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 10);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "i", 11);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, " Distributed systems and backend platform engineering");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "div", 10);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](21, "i", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, " Throughput/latency optimization in production workloads");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "div", 10);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "i", 13);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, " Strong systems fundamentals in C++, Java, Python, and Rust");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "div", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_Template_div_click_27_listener() {
+            return ctx["goto"]("experience");
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "span", 16);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "6+");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "span", 17);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, "Years Exp");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "div", 15);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_Template_div_click_32_listener() {
+            return ctx["goto"]("hacks");
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "span", 16);
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34);
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "span", 14);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36, "Papers");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "span", 17);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36, "Hackathons");
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "div", 15);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "a", 16);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](39, "i", 17);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_Template_div_click_37_listener() {
+            return ctx["goto"]("publications");
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "span", 16);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39);
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "a", 18);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](41, "i", 19);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](42, "a", 20);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](43, "i", 21);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "a", 22);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](45, "i", 23);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "span", 17);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](41, "Papers");
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](46, "div", 24);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_Template_div_click_46_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](42, "div", 18);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "a", 19);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](44, "i", 20);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "a", 21);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](46, "i", 22);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "a", 23);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](48, "i", 24);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "a", 25);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](50, "i", 26);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "div", 27);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_Template_div_click_51_listener() {
             return ctx["goto"]("experience");
           });
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "span", 25);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](48, "Scroll");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](52, "span", 28);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](53, "Scroll");
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](49, "div", 26);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "section", 27);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "div", 28);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](52, "h2", 29);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](53, "Experience");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](54, "div", 30);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](55, HomeComponent_ng_container_55_Template, 4, 3, "ng-container", 31);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](54, "div", 29);
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "section", 30);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "div", 31);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "h2", 32);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](58, "Experience");
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "section", 32);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "div", 28);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](58, "h2", 29);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](59, "Skills");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](60, "div", 33);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](61, HomeComponent_div_61_Template, 5, 2, "div", 34);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "div", 33);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](60, HomeComponent_ng_container_60_Template, 4, 3, "ng-container", 34);
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](62, "section", 35);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "div", 28);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](64, "h2", 29);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](65, "Education & Publications");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](61, "section", 35);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](62, "div", 31);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "h2", 32);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](64, "Skills");
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](66, "div", 36);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](67, HomeComponent_article_67_Template, 10, 3, "article", 37);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](68, "h3", 38);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](69, "Research Publications");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](70, "p", 39);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](71, "a", 40);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](72, "Google Scholar Profile ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](73, "i", 41);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](74, "div", 42);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](75, HomeComponent_article_75_Template, 10, 3, "article", 43);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](65, "div", 36);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](66, HomeComponent_div_66_Template, 5, 2, "div", 37);
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](76, "app-blogs-section");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](77, "app-projects-section");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](78, "app-hacks-section");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](79, "footer", 44);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](80, "div", 45);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](81, "div", 46);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](82, "h3", 47);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](83, "Akram Ansari");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "section", 38);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](68, "div", 31);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](69, "h2", 32);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](70, "Education & Publications");
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](84, "p", 48);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](85, "Senior Software Engineer at Confluent");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](71, "div", 39);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](72, HomeComponent_article_72_Template, 10, 3, "article", 40);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](73, "h3", 41);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](74, "Research Publications");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "p", 42);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](76, "a", 43);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](77, "Google Scholar Profile ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](78, "i", 44);
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](79, "div", 45);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](80, HomeComponent_article_80_Template, 10, 3, "article", 46);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](81, "app-blogs-section");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](82, "app-projects-section");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](83, "app-hacks-section");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](84, "footer", 47);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "div", 48);
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](86, "div", 49);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "a", 50);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](88, "i", 23);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](89, " mdakram28@gmail.com ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "h3", 50);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](88, "Akram Ansari");
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](90, "a", 51);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](91, "i", 17);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](92, " LinkedIn ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](93, "a", 52);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](94, "i", 19);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](95, " GitHub ");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](96, "a", 53);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](97, "i", 21);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](98, " Google Scholar ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](89, "p", 51);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](90, "Senior Software Engineer at Confluent");
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](91, "div", 52);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](92, "a", 53);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](93, "i", 26);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](94, " mdakram28@gmail.com ");
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](99, "div", 54);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](100, "span");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](101, "\xA9 2026 Akram Ansari");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](95, "a", 54);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](96, "i", 20);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](97, " LinkedIn ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](98, "a", 55);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](99, "i", 22);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](100, " GitHub ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](101, "a", 56);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](102, "i", 24);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](103, " Google Scholar ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](104, "div", 57);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](105, "span");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](106, "\xA9 2026 Akram Ansari");
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
         if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](29);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](34);
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.counts.hacks);
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.counts.publications);
@@ -1804,7 +1818,7 @@ function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Can
       function ProjectsComponent(modalService) {
         _classCallCheck(this, ProjectsComponent);
         this.modalService = modalService;
-        this.projects = [_projects_resume_projects__WEBPACK_IMPORTED_MODULE_1__["ProjectOpenVMM"], _projects_resume_projects__WEBPACK_IMPORTED_MODULE_1__["ProjectRoverX"], _projects_resume_projects__WEBPACK_IMPORTED_MODULE_1__["ProjectSyncLib"], _projects_resume_projects__WEBPACK_IMPORTED_MODULE_1__["ProjectVideoLab"], _projects_resume_projects__WEBPACK_IMPORTED_MODULE_1__["ProjectMediaParsers"], _projects_resume_projects__WEBPACK_IMPORTED_MODULE_1__["ProjectThorstream"]];
+        this.projects = [_projects_resume_projects__WEBPACK_IMPORTED_MODULE_1__["ProjectThorstream"], _projects_resume_projects__WEBPACK_IMPORTED_MODULE_1__["ProjectMediaParsers"], _projects_resume_projects__WEBPACK_IMPORTED_MODULE_1__["ProjectCodeBoard"], _projects_resume_projects__WEBPACK_IMPORTED_MODULE_1__["ProjectDAgro"], _projects_resume_projects__WEBPACK_IMPORTED_MODULE_1__["ProjectJ3DEngine"], _projects_resume_projects__WEBPACK_IMPORTED_MODULE_1__["ProjectOpenArt"]];
         this.viewType = "grid";
       }
       return _createClass(ProjectsComponent, [{
@@ -1898,40 +1912,40 @@ function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Can
   /*!*******************************************************************!*\
     !*** ./src/app/home/projects-section/projects/resume-projects.ts ***!
     \*******************************************************************/
-  /*! exports provided: ProjectOpenVMM, ProjectRoverX, ProjectSyncLib, ProjectVideoLab, ProjectMediaParsers, ProjectThorstream */
+  /*! exports provided: ProjectThorstream, ProjectCodeBoard, ProjectDAgro, ProjectJ3DEngine, ProjectMediaParsers, ProjectOpenArt */
   /***/
   function _src_app_home_projectsSection_projects_resumeProjectsTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
-    __webpack_require__.d(__webpack_exports__, "ProjectOpenVMM", function () {
-      return ProjectOpenVMM;
+    __webpack_require__.d(__webpack_exports__, "ProjectThorstream", function () {
+      return ProjectThorstream;
     });
     /* harmony export (binding) */
-    __webpack_require__.d(__webpack_exports__, "ProjectRoverX", function () {
-      return ProjectRoverX;
+    __webpack_require__.d(__webpack_exports__, "ProjectCodeBoard", function () {
+      return ProjectCodeBoard;
     });
     /* harmony export (binding) */
-    __webpack_require__.d(__webpack_exports__, "ProjectSyncLib", function () {
-      return ProjectSyncLib;
+    __webpack_require__.d(__webpack_exports__, "ProjectDAgro", function () {
+      return ProjectDAgro;
     });
     /* harmony export (binding) */
-    __webpack_require__.d(__webpack_exports__, "ProjectVideoLab", function () {
-      return ProjectVideoLab;
+    __webpack_require__.d(__webpack_exports__, "ProjectJ3DEngine", function () {
+      return ProjectJ3DEngine;
     });
     /* harmony export (binding) */
     __webpack_require__.d(__webpack_exports__, "ProjectMediaParsers", function () {
       return ProjectMediaParsers;
     });
     /* harmony export (binding) */
-    __webpack_require__.d(__webpack_exports__, "ProjectThorstream", function () {
-      return ProjectThorstream;
+    __webpack_require__.d(__webpack_exports__, "ProjectOpenArt", function () {
+      return ProjectOpenArt;
     });
-    var ProjectOpenVMM = {
+    var ProjectThorstream = {
       title: "Thorstream",
       subtitle: "Distributed Streaming Broker in Rust",
-      thumbnail: "/assets/projects/resume/openvmm.png",
+      thumbnail: "/assets/projects/resume/thorstream.png",
       thumbnail_size: "cover",
       thumbnail_bg: "#1f3558",
       description: "Built a Rust event streaming broker with append-only segmented logs, Kafka protocol endpoint, custom protocol server, quorum replication, deterministic leader election, and compatibility APIs (Kafka Connect/Schema Registry).",
@@ -1946,7 +1960,7 @@ function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Can
         url: "https://mdakram.com/thorstream/"
       }]
     };
-    var ProjectRoverX = {
+    var ProjectCodeBoard = {
       title: "CodeBoard",
       subtitle: "Online Judge & Contest Platform",
       thumbnail: "/assets/img/proj_codeboard_1.png",
@@ -1961,7 +1975,7 @@ function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Can
         url: "https://github.com/mdakram28/codeboard"
       }]
     };
-    var ProjectSyncLib = {
+    var ProjectDAgro = {
       title: "DAgro",
       subtitle: "Blockchain-Powered Agriculture Marketplace",
       thumbnail: "/assets/img/proj_agroshare_1.jpg",
@@ -1976,7 +1990,7 @@ function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Can
         url: "https://github.com/mdakram28/dagro"
       }]
     };
-    var ProjectVideoLab = {
+    var ProjectJ3DEngine = {
       title: "J3D Engine",
       subtitle: "Software 3D Rendering Engine in Java",
       thumbnail: "/assets/img/proj_j3d_1.jpg",
@@ -1994,7 +2008,7 @@ function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Can
     var ProjectMediaParsers = {
       title: "Media Parsers GUI",
       subtitle: "Web-based Media Analyzer",
-      thumbnail: "/assets/projects/resume/mediaparsers.png",
+      thumbnail: "/assets/projects/resume/mediaparser.png",
       thumbnail_size: "cover",
       thumbnail_bg: "#4caf50",
       description: "Built a browser-only multimedia parser GUI for AV1/HEVC/MP4/IVF with container auto-detection, syntax tree inspection, integrated hex view, and track extraction/downloading.",
@@ -2009,12 +2023,12 @@ function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Can
         url: "https://mdakram.com/media-parser-gui/"
       }]
     };
-    var ProjectThorstream = {
+    var ProjectOpenArt = {
       title: "OpenArt",
       subtitle: "Content Provenance on Blockchain + IPFS",
-      thumbnail: "/assets/projects/resume/videolab.png",
-      thumbnail_size: "cover",
-      thumbnail_bg: "#7b4397",
+      thumbnail: "/assets/projects/resume/openart.png",
+      thumbnail_size: "contain",
+      thumbnail_bg: "#ffffff",
       description: "Built a decentralized media-sharing prototype where files are uploaded to IPFS and ownership/payment state is tracked through Ethereum smart contracts for provenance and anti-plagiarism workflows.",
       tags: ["IPFS", "Ethereum", "Web3.js", "Smart Contracts", "DApp"],
       gallery: [],

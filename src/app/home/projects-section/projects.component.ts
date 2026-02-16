@@ -1,12 +1,5 @@
 import { Component, OnInit, TemplateRef, ViewChild } from "@angular/core";
-import {
-  ProjectOpenVMM,
-  ProjectRoverX,
-  ProjectSyncLib,
-  ProjectVideoLab,
-  ProjectMediaParsers,
-  ProjectThorstream,
-} from "./projects/resume-projects";
+import * as project from "./projects/resume-projects";
 import { BsModalRef, BsModalService } from "ngx-bootstrap/modal";
 import { Project } from "./project.model";
 import { GalleryItem, ImageItem } from "ng-gallery";
@@ -18,12 +11,12 @@ import { GalleryItem, ImageItem } from "ng-gallery";
 })
 export class ProjectsComponent implements OnInit {
   projects = [
-    ProjectOpenVMM,
-    ProjectRoverX,
-    ProjectSyncLib,
-    ProjectVideoLab,
-    ProjectMediaParsers,
-    ProjectThorstream,
+    project.ProjectThorstream,
+    project.ProjectMediaParsers,
+    project.ProjectCodeBoard,
+    project.ProjectDAgro,
+    project.ProjectJ3DEngine,
+    project.ProjectOpenArt,
   ];
 
   viewType = "grid";
