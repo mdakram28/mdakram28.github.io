@@ -7,8 +7,8 @@ export const ProjectOpenVMM: Project = {
     thumbnail_size: "cover",
     thumbnail_bg: "#1f3558",
     description:
-        "Built a Kafka-compatible streaming broker with append-only segmented storage, consumer groups, partitioned logs, replication, leader election, and operational metrics. Includes compatibility APIs plus a React operations dashboard.",
-    tags: ["Rust", "Distributed Systems", "Kafka", "Replication", "Storage"],
+        "Built a Rust event streaming broker with append-only segmented logs, Kafka protocol endpoint, custom protocol server, quorum replication, deterministic leader election, and compatibility APIs (Kafka Connect/Schema Registry).",
+    tags: ["Rust", "Distributed Systems", "Kafka", "Replication", "Observability"],
     gallery: [],
     readmeSrc: "https://raw.githubusercontent.com/mdakram28/thorstream/main/README.md",
     links: [
@@ -24,10 +24,10 @@ export const ProjectRoverX: Project = {
     thumbnail_size: "cover",
     thumbnail_bg: "#2a2f45",
     description:
-        "Developed a multi-language coding contest platform with challenge lifecycle management, sandboxed code execution queue, realtime test-case feedback via sockets, and submission scoring/leaderboard workflows.",
-    tags: ["Node.js", "Express", "MongoDB", "Realtime", "Execution Engine"],
+        "Built a full-stack coding contest platform with challenge authoring, testcase administration, queued code execution for C++/Java/Python/Node, and realtime scoring feedback over Socket.IO.",
+    tags: ["Node.js", "Express", "MongoDB", "Socket.IO", "Code Execution"],
     gallery: [],
-    readmeSrc: "",
+    readmeSrc: "/assets/projects/readmes/codeboard.md",
     links: [{ type: "github", url: "https://github.com/mdakram28/codeboard" }],
 };
 
@@ -38,8 +38,8 @@ export const ProjectSyncLib: Project = {
     thumbnail_size: "cover",
     thumbnail_bg: "#2d5034",
     description:
-        "Implemented smart-contract-backed community economics for farming workflows: member shares, deposits, valuation, and task assignment/verification on Ethereum with a Web3 + Truffle DApp frontend.",
-    tags: ["Solidity", "Ethereum", "Web3", "Truffle", "Smart Contracts"],
+        "Implemented a smart-contract-powered agriculture marketplace DApp with on-chain membership, share ownership, deposits/withdrawals, and task lifecycle flows using Solidity + Web3 + Truffle.",
+    tags: ["Solidity", "Ethereum", "Web3.js", "Truffle", "DApp"],
     gallery: [],
     readmeSrc: "https://raw.githubusercontent.com/mdakram28/dagro/main/README.md",
     links: [{ type: "github", url: "https://github.com/mdakram28/dagro" }],
@@ -52,8 +52,8 @@ export const ProjectVideoLab: Project = {
     thumbnail_size: "cover",
     thumbnail_bg: "#ededed",
     description:
-        "Built a modular Java 3D renderer from scratch using custom geometric primitives, projection math, plane sorting, clipping/intersection logic, and interactive camera movement controls.",
-    tags: ["Java", "Rendering", "Linear Algebra", "Engine Design"],
+        "Built a Java software 3D renderer with reusable shape primitives, projection and clipping math, depth-aware plane ordering, and interactive camera controls driven by keyboard events.",
+    tags: ["Java", "3D Rendering", "Linear Algebra", "Engine Design"],
     gallery: [],
     readmeSrc: "https://raw.githubusercontent.com/mdakram28/j3d/main/readme.md",
     links: [{ type: "github", url: "https://github.com/mdakram28/j3d" }],
@@ -66,7 +66,7 @@ export const ProjectMediaParsers: Project = {
     thumbnail_size: "cover",
     thumbnail_bg: "#4caf50", // Green
     description:
-        "Built an in-browser AV1/HEVC/MP4/IVF bitstream explorer with container auto-detection, syntax tree visualization, raw hex inspection, and track extraction/download workflows.",
+        "Built a browser-only multimedia parser GUI for AV1/HEVC/MP4/IVF with container auto-detection, syntax tree inspection, integrated hex view, and track extraction/downloading.",
     tags: ["TypeScript", "React", "Bitstream Parsing", "AV1", "HEVC"],
     gallery: [],
     readmeSrc: "https://raw.githubusercontent.com/mdakram28/media-parser-gui/main/README.md",
@@ -83,8 +83,8 @@ export const ProjectThorstream: Project = {
     thumbnail_size: "cover",
     thumbnail_bg: "#7b4397",
     description:
-        "Designed a decentralized media-sharing prototype that stores content on IPFS and records ownership/payment metadata on Ethereum smart contracts to improve provenance and misuse resistance.",
-    tags: ["IPFS", "Ethereum", "Web3.js", "DApp", "Content Security"],
+        "Built a decentralized media-sharing prototype where files are uploaded to IPFS and ownership/payment state is tracked through Ethereum smart contracts for provenance and anti-plagiarism workflows.",
+    tags: ["IPFS", "Ethereum", "Web3.js", "Smart Contracts", "DApp"],
     gallery: [],
     readmeSrc: "https://raw.githubusercontent.com/mdakram28/openart/main/README.md",
     links: [{ type: "github", url: "https://github.com/mdakram28/openart" }],

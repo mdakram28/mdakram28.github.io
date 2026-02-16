@@ -33,6 +33,7 @@
     "ngx-markdown": "^10.1.1",
     "puppeteer": "19.0.0",
     "puppeteer-core": "19.0.0",
+    "querystring": "^0.2.1",
     "rxjs": "~6.5.4",
     "scully-plugin-disable-angular": "^8.0.0",
     "tslib": "^1.10.0",
@@ -62,7 +63,6 @@
     "protractor": "~5.4.3",
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
-    "typescript": "~3.7.5",
-    "webpack-dev-server": "^5.2.3"
+    "typescript": "~3.7.5"
   }
 }
